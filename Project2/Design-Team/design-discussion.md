@@ -10,21 +10,18 @@ Arthur Wanner - arthurjwannerjr@gmail.com
 
 ### Quick Design Philosophy
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Uses a `Customer` object to hold all details about a customer.  `Manager` object responsible for performing management functionality.  `System` object orchestrates interactions between them.
 
 ### Pros of this design:
 
-* Lorem
-* ipsum
-* dolor
-* sit
-* amet
+* Centralizes design into a core `System` class.
+* Compact set of objects
+* Persistence detailed
 
 ### Cons of this design:
 
-* consectetur
-* adipiscing
-* elit
+* Mixes "controller" with "model" in single classes
+* Does not articulate interaction with user interface
 
 ## Design 2: Charles McGuinness
 
