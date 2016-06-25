@@ -42,7 +42,8 @@ around a particular use case.
 
 ### Cons of this design:
 
-* Business logic partially embedded in the "interface" classes rather than being put into free-standing classes.  Other parts of business logic distributed into entity classes where it probably doesn't belong.
+* Business logic partially embedded in the "interface" classes rather than being put into free-standing classes.  
+* Entity classes hold business logic, on how to orchestrate actions with other loosely related classes; it probably doesn't belong there.
 * Some handwaving around utility classes (e.g., assumes there's a utility class that can read a QR code from a badge and generate the user id number).
 * Unclear of all the relationships are modelled correctly.
 * Was confused about use of terminology "interface" in assignment, probably should have built real java interfaces (although it seems odd when only one class implements an interface -- overkill?)
@@ -74,8 +75,6 @@ For these kinds of interactions, we assume that the user interface instantiates 
 When the first bowler indicates they wish to log in, `System` scans their card and remembers their customer id.  Then, through the UI, the bowler indicates that 2 of them wish to bowl; the system realizes that it needs to scan another card, and so returns a flag indicating so.  When the next bowler is ready to hold their card in front of the camera, the UI calls "nextBowler" to tell the system to scan their card.  When that is done, the system indicates that all bowler's cards have been scanned.  The bowlers then indicate that they are ready to bowl, and the UI asks for the lane number to send them to; `System` returns that, and that completes the interaction.  
 
 Naturally, there is a lot of work that happens behind the scenes.  `System` creates and manages `Bowler` records for long term tracking of players.  `System` also creates the `BowlingParty` instances to track who is currently bowling.  And other entities are managed -- `Lane` and `Score` to track other items of persistent interest.
-
-
 
 
 ## Summary
