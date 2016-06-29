@@ -16,7 +16,7 @@
 </tr>
 </table>
 ## 1 Introduction
-> GoBowl: Management System is used to conduct customer requests as well as information and alley maintenance.
+> GoBowl Alley Management System: is used to conduct customer requests as well as information and alley maintenance.
 
 
 ## 2 Process Description
