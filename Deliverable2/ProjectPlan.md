@@ -1,27 +1,64 @@
-# Project Plan
+# Project Plan GoBowl Alley Management
 
-*This is the template for your project plan. The parts in italics are concise explanations of what should go in the corresponding sections and should not appear in the final document.*
+- **Author**: Anja
+- **Created**: 6/29/2016
+- **Last Revised**: 6/29/2016
+- **Version**: 1.0
 
-**Author**: \<person or team name\>
-
-| Version | Description     |
-| --------|:---------------:|
-| V1      | Initial version |
-*In case you revise this document in later deliverables, increase the version number and concisely describe what you modified. For example:*
-
-| *Version* | *Description*       | 
-| ----------|:-------------------:|
-| *V1*      | *Initial version*   |
-| *V2*      | *Updated Sections 2 and 3 basd on better understanding of the system* |
-| *...*     | *...*               |
-
+<table border="1">
+<tr>
+<td>Version</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>Initial Version</td>
+</tr>
+</table>
 ## 1 Introduction
+> GoBowl: Management System is used to conduct customer requests as well as information and alley maintenance.
 
-*Here you introduce the product. Keep this  clean and simple, one or two sentences at most.*
 
 ## 2 Process Description
 
-*Process description as a set of activities; for each activity, provide the following:*
+<table border="1">
+<tr>
+<td>Name</td>
+<td>Description</td>
+<td>Entrance criteria</td>
+<td>Exit Criteria</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 - *Activity name (verb or verb phrase)*
 - *Activity description (concise paragraph)*
@@ -30,8 +67,25 @@
 
 ## 3 Team
 
-*Describe the team and their roles (there may be more roles than there are team members)*
-
-- *Team members' names*
-- *Roles, with a short description of each role*
-- *Table showing which team member(s) has which role(s)*
+<table border="1">
+<tr>
+<td>Role</td>
+<td>Responsibilities</td>
+<td>Team Member(s)</td>
+</tr>
+<tr>
+<td>Project Manager</td>
+<td>Oversees progress and maintenance of project, assuring that the objectives are being met according to design and planning.</td>
+<td></td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>Writes the classes and their functions according to plan as illustrated in design. Updates and resolves faults and/or errors as need be. Updates behavior according to current design description.</td>
+<td></td>
+</tr>
+<tr>
+<td>Tester</td>
+<td>Ensures that the behavior is as desired. Flags any misbehavior or unplanned behavior for the developer to research and resolve.</td>
+<td></td>
+</tr>
+</table>
