@@ -25,23 +25,23 @@
 <tr>
 <td>Name</td>
 <td>Description</td>
-<td>Entrance criteria</td>
+<td>Entrance Criteria</td>
 <td>Exit Criteria</td>
 </tr>
 <tr>
 <td>Customer Lane Request</td>
-<td> Processes the signing in and registration for an open lane for the requesting customer.</td>
-<td>
-<table border="1">
-<li>scan customer card</li>
-<li>edit customer information as needed</li>
-<li>find an open lane</li>
-</table></td>
+<td>Processes the signing in and registration for an open lane for the requesting customer.</td>
 <td>
 <ul>
-<li>customer signed in successfully</li>
-<li>lane acquired by customer</li>
-<li>session time started</li>
+<li>Scan customer card</li>
+<li>Edit customer information as needed</li>
+<li>Find an open lane</li>
+</ul></td>
+<td>
+<ul>
+<li>Customer signed in successfully</li>
+<li>Lane acquired by customer</li>
+<li>Session time started</li>
 </ul></td>
 </tr>
 <tr>
@@ -50,13 +50,13 @@
 </td>
 <td>
 <ul>
-<li>customer information</li>
-<li>upload to database</li>
+<li>Customer information</li>
+<li>Upload to database</li>
 </ul></td>
 <td>
 <ul>
-<li>customer card print</li>
-<li>customer information saved in database</li>
+<li>Customer card print</li>
+<li>Customer information saved in database</li>
 </ul></td>
 </tr>
 <tr>
@@ -64,13 +64,13 @@
 <td> Edit customer information upon notification of change in name, address, phone number, etc.</td>
 <td> 
 <ul>
-<li>updated customer information</li>
-<li>upload change to database</li>
+<li>Updated customer information</li>
+<li>Upload change to database</li>
 </ul></td>
 <td>
 <ul>
-<li>updated customer information shown in database</li>
-<li>new customer card printed</li>
+<li>Updated customer information shown in database</li>
+<li>New customer card printed</li>
 </ul></td>
 </tr>
 <tr>
@@ -78,29 +78,29 @@
 <td> During bowling session, hold bowling party, save scores under each player, as well as the session time for charging purposes.</td>
 <td>
 <ul>
-<li>bowler names</li>
-<li>score</li>
-<li>session start time</li>
-<li>session end time</li>
+<li>Bowler names</li>
+<li>Score</li>
+<li>Session start time</li>
+<li>Session end time</li>
 </ul></td>
 <td>
 <ul>
-<li>list of scores for each</li>
-<li>total session time record</li>
+<li>List of scores for each</li>
+<li>Total session time record</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>Customer Check Out</td>
 <td>
-	Charging customer(s) appropriately for session time, reopening corresponding lane for use, VIP status check, and allowing customer to save scores.
+Charging customer(s) appropriately for session time, reopening corresponding lane for use, VIP status check, and allowing customer to save scores.
 </td>
 <td>
 <ul>
-<li>customer credit card</li>
-<li>total bill charge</li>
-<li>scores list</li>
-<li>customer's YTD total</li>
+<li>Customer credit card</li>
+<li>Total bill charge</li>
+<li>Scores list</li>
+<li>Customer's YTD total</li>
 </ul>
 </td>
 <td>
@@ -115,11 +115,6 @@
 </tr>
 </table>
 
-- *Activity name (verb or verb phrase)*
-- *Activity description (concise paragraph)*
-- *Entrance criteria (inputs needed for the activity)*
-- *Exit criteria (outputs produced by the activity and how you know it has been completed satisfactorily)*
-
 ## 3 Team
 
 <table border="1">
@@ -131,16 +126,16 @@
 <tr>
 <td>Project Manager</td>
 <td>Oversees progress and maintenance of project, assuring that the objectives are being met according to design and planning.</td>
-<td></td>
+<td>Anja</td>
 </tr>
 <tr>
 <td>Developer</td>
 <td>Writes the classes and their functions according to plan as illustrated in design. Updates and resolves faults and/or errors as need be. Updates behavior according to current design description.</td>
-<td></td>
+<td>Charles</td>
 </tr>
 <tr>
 <td>Tester</td>
 <td>Ensures that the behavior is as desired. Flags any misbehavior or unplanned behavior for the developer to research and resolve.</td>
-<td></td>
+<td>Arthur</td>
 </tr>
 </table>
