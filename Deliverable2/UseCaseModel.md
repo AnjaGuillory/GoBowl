@@ -39,7 +39,7 @@ Requirements:  The "Add Customer" Use Case allows the Manager to add a new Custo
 
 Pre-conditions:  The customer is not in the system yet.
 
-Post-conditions:  The new customer is successfully added to the system.
+Post-conditions:  The new customer is successfully added to the system and a customer card is printed.
 
 Normal Scenario:
 
@@ -47,7 +47,7 @@ Normal Scenario:
 - Manager chooses "Add Customer" from the available menu options.
 - Manager enters customer name and email address into the system.
 - The manager chooses "Create" after data is entered.
-- A confirmation dialog is displayed.  The manager chooses "Yes" to confirm the data.
+- A confirmation dialog is displayed and the manager chooses "Yes" to confirm the data.
 - The new customer is added to the system.
 - The customer card is printed and manager gives card to customer.
 
@@ -57,7 +57,7 @@ Alternate Scenario:
 - Manager chooses "Add Customer" from the available menu options.
 - Manager enters customer name and email address into the system.
 - The manager clicks "Create" after data is entered.
-- A confirmation dialog is displayed.  The manager chooses "No" because data is inaccurate.
+- A confirmation dialog is displayed and the manager chooses "No" because data is inaccurate.
 - The manager fixes the data, clicks "Create" and confirms the correct data.
 - The customer card is printed and manager gives card to customer.
 
@@ -67,12 +67,55 @@ Exceptional Scenario:
 - Manager chooses "Add Customer" from the available menu options.
 - Manager enters customer name and email address into the system.
 - The manager chooses "Create" after data is entered.
-- A confirmation dialog is displayed.  The manager chooses "Yes" to confirm the data.
+- A confirmation dialog is displayed and the manager chooses "Yes" to confirm the data.
 - The system detects duplicate customer because email address already exists in the system.
 - The system rejects the creation and returns to the data entry form.
-- The manager aborts the operation by choosing cancel and returning back to the main menu.
+- The manager aborts the operation by choosing "Cancel" and returning back to the main menu.
+
+
+### Use Case:  Edit Customer Information
+Requirements:  A customer who is already in the system wishes to modify their customer information.  The manager can modify the name or email address and save the changes.
+
+Pre-conditions:  The customer to be modified is in the system already.
+
+Post-conditions:  The customer information is updated and a new customer card is printed.
+
+Normal Scenario:
+
+- The manager signs into the system.
+- Manager chooses "Edit Customer" from the menu system.
+- Manager enters the unique customer email address.
+- The system displays the information for the customer in editable form fields.
+- The Manager modifies the customer name or email address.
+- The manager chooses "Save" after data is entered.
+- A confirmation dialog is displayed and the manager chooses "Yes" to confirm the data.
+- The customer information is saved.
+- A new customer card is printed and manager gives card to customer.
+
+Alternate Scenario:
+
+- The manager signs into the system.
+- Manager chooses "Edit Customer" from the menu system.
+- Manager enters the unique customer email address.
+- The system cannot find a customer for the entered email.
+- The manager chooses "Cancel" to exit back to the main menu.
+
+Exceptional Scenario:
+
+- The manager signs into the system.
+- Manager chooses "Edit Customer" from the menu system.
+- Manager enters the unique customer email address.
+- The system displays the information for the customer in editable form fields.
+- The Manager modifies the email address.
+- The manager chooses "Save" after data is entered.
+- A confirmation dialog is displayed and the manager chooses "Yes" to confirm the data.
+- The system detects duplicate customer because email address already exists in the system.
+- The system rejects the creation and returns to the data entry form.
+- The manager aborts the operation by choosing "Cancel" and returning back to the main menu.
 
 
 
- 
+
+
+
 
