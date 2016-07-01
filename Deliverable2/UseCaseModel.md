@@ -166,4 +166,54 @@ Alternate Scenario:
 - If a lane is not available the systems informs the customer.
 - The system returns to the main menu.
 
+### Use Case:  Checkout
+
+Requirements:  When customers are done bowling they need to checkout of the system.  They are prompted to pay via credit card and optionally save their scores.
+
+Pre-conditions:  The customers are done bowling.
+
+Post-conditions:  The customers have payed for their games and saved their scores.
+
+Normal Scenario:
+
+- The customer signs into the system.
+- The customer chooses "Checkout" from the available menu options.
+- The customer enters the lane number on which they were bowling.
+- The system asks the customer if anyone would like to save their score.
+- If customer answers yes, then the system displays a list of players to choose from.
+- For all customers who want to save their score, choose the player and enter the score.
+- Customer chooses "Done" to indicate finished entering scores.
+- The system prompts the customer how many ways to evenly split the bill.
+- The customer enters 2.
+- The system prompts the customer to scan 2 credit cards, each being charged the same amount.
+- The system prints receipts and returns to main menu.
+
+Alternative Scenario:
+
+- The customer signs into the system.
+- The customer chooses "Checkout" from the available menu options.
+- The customer enters the lane number on which they were bowling.
+- The system asks the customer if anyone would like to save their score.
+- If customer answers no, then the system moves on to collect payment.
+- The system prompts the customer how many ways to split the bill.
+- The customer enters 1.
+- The system prompts the customer to scan 1 credit card to pay the whole bill.
+- The system prints receipts and returns to main menu.
+
+Exceptional Scenario:
+
+- The customer signs into the system.
+- The customer chooses "Checkout" from the available menu options.
+- The customer enters the lane number on which they were bowling.
+- The system asks the customer if anyone would like to save their score.
+- If customer answers no, then the system moves on to collect payment.
+- The system prompts the customer how many ways to split the bill.
+- The customer enters 1.
+- The system prompts the customer to scan 1 credit card to pay the whole bill.
+- The credit card is rejected by the system and prompts the customer to try again.
+- The customer uses a different credit card and the system scans it.
+- The system prints receipts and returns to main menu.
+
+
+
 
