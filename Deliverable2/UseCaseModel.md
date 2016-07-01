@@ -115,7 +115,55 @@ Exceptional Scenario:
 
 
 
+### Use Case: Print Customer Card
+
+Requirements:  A new customer card can be printed if their original is lost or damaged.
+
+Pre-conditions:  The customer is already in the system.
+
+Post-conditions:  A new customer card is printed for the customer
+
+Normal Scenario:
+
+- The manager signs into the system.
+- Manager chooses "Print Customer Card" from the menu.
+- Manager enters the unique customer email address.
+- If customer is found, then a new customer card is printed.
+- The system returns back to the main menu.
+
+Alternate Scenario:
+
+- The manager signs into the system.
+- Manager chooses "Print Customer Card" from the menu.
+- Manager enters the unique customer email address.
+- If customer is not found, the system returns back to email entry form to try again.
+- The manager chooses "Cancel" to return back to the main menu.
 
 
+### Use Case:  Request Lane
+
+Requirements:  The customer can request a lane by scanning their customer card and choosing the number of players.  The other customers then scan their cards as well.  Customers must be registered to play.  If a lane is available it is assigned to the customer group.
+
+Pre-conditions:  All customers are registered and a lane is available.
+
+Post-conditions:  The customers are assigned a lane to bowl on.
+
+Normal Scenario:
+
+- The customer signs into the system.
+- The customer chooses "Request Lane" from the available menu options.
+- If a lane is available the systems prompts the customer to scan their card.
+- The system scans the customer card.
+- The customer enters the number of bowlers.
+- The system scans the remaining customer cards one at a time.
+- After all customer cards are scanned, the system displays the lane number.
+- The customer then chooses "Exit" to return back to the main menu.
+
+Alternate Scenario:
+
+- The customer signs into the system.
+- The customer chooses "Request Lane" from the available menu options.
+- If a lane is not available the systems informs the customer.
+- The system returns to the main menu.
 
 
