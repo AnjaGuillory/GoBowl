@@ -22,17 +22,16 @@
 Actor:  Bowling Alley Manager (Manager)
 Use Cases:  Add Customer, Edit Customer, Print Customer Card
 
+
+![](https://lh3.googleusercontent.com/hpLztHjqMcDQp2ppTkIbEKqHd_xcGoApEuFQFFnP7AcIkyBkNZIYpaFQWJj73pxURS4FdJwgGqj55unZ2CfWkNhg9ETp8e8tSLwmfYwncZNkfEvNutwowV-eDcjpPUBM_RKzCVs1a7UmMLTXBJuyvItbDMaIq1xFPDR8lM0YCcekysIPJ0xI1mBnvElfpRI60n0xUmJ2MAHtc7kYRZCU0aJPm6NVQI0BXj8cDLikx0fWxXL7gVHLNG5fFlm_FmP9xCHruoDMHGg2zSP9ra-hMduJSJrD6R0-_Y7PJGALHqncow-HdEdrPDMGW8k5DStHWrxvgGoEsCbreUv3csC9JbhWPfb_SQVkVV6zsTj6SWqqw9gCm_A7Hp90JdJG6H_Ge4p6_jHQSlC8v4ZM9f6UWNI83mkay6q9XOXMtl-b3_vSTcLIB6ZpbuT2nGorRsJleFIA_Mx_fuWSI1oBsaoK3Ok93UXPz95JUWEAEZ0I3tBO9-wDdCM59JijIqhIvOea0vye8taCvm4gI9zwCpmNVPKOd0zS2ECIQneCH0kfwg9DjzyjNWwG1pUmfZVV6LkbnNVlVhI7GVCz_QJ4QwobeR66wnheUbSL=w1346-h599-no)
+
+
 Actor:  Bowling Alley Customer (Customer)
 Use Cases:  Request Lane, Checkout 
 
+![](https://lh3.googleusercontent.com/persMYDkZhEj8ZMYpbm55-k_vUg3TFNrLjrR1ZABFBQJHei3UtIneGseCyMpybwpzjy6kfUqHlXbW-qUPkrMont-F6oZi3btAMTADPxjAbC12ZO5Y_gRY4k087jFLpEUrLfP2rEYQNKvZZQHFUlkb5ngjhvEO11FkCDYhzE9e_-HwtCca4c4mkXoPFaH0usJ9b8yrnwqMCt5EqYH6eQ-x5QGlb_S90Wv6kBa24f1EZbPEE0XhbfvylAAa3WEjSRtqpqlBZNaHzhxRU65LckcF7dil7i0poVx4-c-4ae7FGy2eqNYh3lbW9MYu79DdXvXOdABMz1UB6faFj5a-SjnmDO9mhlAeO-gHkuQGYuM7YgMTfEguKQgNeyJpik-Ve6B2SX3YyWViBNS6s0JwoFX4hV2aAMKItqxLd775DTkkYgsr165yKQE0L0BOwi5oXI_2Y7eDTs2DUh53eoC_qQXGBbl0HQMfeeHeeCnp_UX4FTgBpFSDlbx9IkCU9Ck8arzEbcbzrAwnmaP7TPAkzjtmZbMaQ7Kd-I-GOkNwjJj8vKN_RpNInCel8Jpmr8ETeD0cB5vtlN0KB7KI6nmCZcrFTtrXTtaP4Ta=w904-h599-no)
+
 ## 2 Use Case Descriptions
-
-*For each use case in the use case diagram, this section should contain a description, with the following elements:*
-
-- *Requirements: High-level description of what the use case must allow the user to do.*
-- *Pre-conditions: Conditions that must be true before the use case is run.*
-- *Post-conditions Conditions that must be true once the use case is run.*
-- *Scenarios: Sequence of events that characterize the use case. This part may include multiple scenarios, for normal, alternate, and exceptional event sequences. These scenarios may be expressed as a list of steps in natural language or as sequence diagrams.*
 
 ### Use Case:  Add Customer
 Requirements:  The "Add Customer" Use Case allows the Manager to add a new Customer to the system so that they may bowl.
