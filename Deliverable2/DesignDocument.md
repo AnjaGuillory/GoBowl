@@ -88,7 +88,7 @@ When mapping the components of the application to the underlying classes, the it
 
 ## 4 User Interface Design
 
-### Program Startup (Splash and Manager/Cusotomer Selection):
+### Program Startup (Splash and Manager/Customer Selection):
 ![Startup Screen](images/wf-01-splash.png)
 ![Startup Screen](images/wf-01-login.png)
 
