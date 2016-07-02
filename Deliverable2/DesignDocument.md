@@ -14,7 +14,7 @@ The bowling alley application is designed to use Android smartphones (or tablets
 
 * We assume the UI will be run on a modern Android OS
 * We assume the UI will be primarily used on a smartphone form factor
-* We assume that a backing store will be selected later and incorporate in subsequent rounds of development after the core application design is approved.
+* We assume that a proper backing store will be selected later and incorporate in subsequent rounds of development after the core application design is approved.  For the short term, the database capabilities on the android device will be used.
 * We assume the hardware libraries will be provided to us at a later point
 * We assume that there is a local network connecting the smartphone and other components in the bowling alley.
 
@@ -26,7 +26,6 @@ The bowling alley application is designed to use Android smartphones (or tablets
 ### 1.3 System Environment
 
 * The system will run on an Android phone or tablet, but will be optimized for phone form factors.
-* Backend is TBD, but for the moment is assumed to be some sort of database that can be access via an API.
 * All devices that the application talks to are IP-enabled.
 
 ## 2 Architectural Design
@@ -41,18 +40,18 @@ As the functionality at this point is quite simple, the design revolves around a
 
 ### 2.1 Component Diagram
 
-![Components](images/component.png)
+![Components](images/components.png)
 
 The components of the application are:
 
-* The user interface
-* The manager functions
-* The customer functions
-* An interface to the badge printer
-* An interface to a persistant store
-* An interface to the credit card scanner and processor
-* An interface to the camera that reads badges
-* An interface to the scoring system in the lanes
+* The user interface (View)
+* The manager functions (Controller)
+* The customer functions (Controller)
+* The persistant store (Model)
+* An interface to the badge printer (Utility)
+* An interface to the credit card scanner and processor  Utility)
+* An interface to the camera that reads badges (Utility)
+* An interface to the scoring system in the lanes (Utility)
 
 ### 2.2 Deployment Diagram
 
