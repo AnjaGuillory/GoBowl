@@ -1,23 +1,13 @@
 # Use Case Model
 
-*This is the template for your use case model. The parts in italics are concise explanations of what should go in the corresponding sections and should not appear in the final document.*
-
-**Author**:  6300Summer16Team07 
+**Author**:  6300Summer16Team07, Anja Guillory, Arthur Wanner
 
 | Version | Description     |
 | --------|:---------------:|
 | V1      | Initial version |
-*In case you revise this document in later deliverables, increase the version number and concisely describe what you modified. For example:*
 
-| *Version* | *Description*       | 
-| ----------|:-------------------:|
-| *V1*      | *Initial version*   |
-| *V2*      | *Updated Sections 2 and 3 basd on better understanding of the system* |
-| *...*     | *...*               |
 
 ## 1 Use Case Diagram
-
-*This section should contain a use case diagram with all the actors and use cases for the system, suitably connected.*
 
 Actor:  Bowling Alley Manager (Manager)
 Use Cases:  Add Customer, Edit Customer, Print Customer Card
