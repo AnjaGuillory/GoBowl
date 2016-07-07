@@ -22,6 +22,9 @@ public class BowlerToParty extends DatabaseEntity {
     public static BowlerToParty getByBowler(String bowlerId) {
         BowlerToParty b2p = new BowlerToParty();
         b2p.fetchByColumn("bowlerid", bowlerId);
+        if (b2p.instanceData == null) {
+            return null;
+        }
         return b2p;
     }
 }

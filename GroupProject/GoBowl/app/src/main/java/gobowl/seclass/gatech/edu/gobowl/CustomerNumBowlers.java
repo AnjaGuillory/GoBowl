@@ -63,8 +63,8 @@ public class CustomerNumBowlers extends AppCompatActivity {
                 cd.dialog("Bowling Party", "Customer Scanned!",
                         new CheesyCallback() {
                             @Override
-                            public void allDone() {
-                                Intent myIntent = new Intent(CustomerNumBowlers.this, CustomerLogin.class);
+                            public void allDone(android.content.Context parent) {
+                                Intent myIntent = new Intent(parent, CustomerLogin.class);
                                 myIntent.putExtra("title","Scan Next Bowler Please");
                                 myIntent.putExtra("action", "next");
                                 startActivityForResult(myIntent, 0);

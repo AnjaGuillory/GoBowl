@@ -19,4 +19,20 @@ public interface Customer {
     //  Finish up the bowling party, release intermediate resources
     //  Returns the lane to use...
     public int startBowling();
+
+    // Checkout process
+
+    //  Can the user checkout?
+    public boolean checkOut();
+
+    //  How much are the fees?
+    public double getFees();
+    //  What lane is/was the party at?
+    public int getLane();
+    //  Number of cards
+    public void setNumCreditCards(int n);
+
+    //  Pay with a card...
+    //  -1 card scan error, -2 card payment error, 0 more cards, 1 done
+    public int makePayment();
 }

@@ -1,7 +1,11 @@
 package gobowl.seclass.gatech.edu.gobowl.controller;
 
-import java.util.ArrayList;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+import edu.gatech.seclass.services.CreditCardService;
+import edu.gatech.seclass.services.PaymentService;
 import edu.gatech.seclass.services.PrintingService;
 import edu.gatech.seclass.services.QRCodeService;
 import gobowl.seclass.gatech.edu.gobowl.models.Bowler;
@@ -58,15 +62,15 @@ public class BowlingSystem implements Customer, Manager {
 
     private int totalBowlers;
     private int bowlersSoFar;
-    BowlingParty bp;
+    BowlingParty activeBowlingParty;
 
 
     @Override
     public boolean requestLane(int numberOfBowlers) {
         totalBowlers = numberOfBowlers;
         bowlersSoFar = 1;
-        bp = new BowlingParty();
-        bp.addBowler(leadBowler);
+        activeBowlingParty = new BowlingParty();
+        activeBowlingParty.addBowler(leadBowler);
         if (totalBowlers == 1) {
             return true;
         }
@@ -83,7 +87,7 @@ public class BowlingSystem implements Customer, Manager {
         }
 
         Bowler b = new Bowler(id);
-        bp.addBowler(b);
+        activeBowlingParty.addBowler(b);
 
         bowlersSoFar++;
 
@@ -99,15 +103,78 @@ public class BowlingSystem implements Customer, Manager {
     @Override
     public int startBowling() {
         int lane = Lane.getFreeLane();
-        bp.setInteger("lane", lane);
-        bp.setInteger("active", 1);
-        bp.saveRecord();
+        activeBowlingParty.setInteger("lane", lane);
+        activeBowlingParty.setInteger("active", 1);
+        activeBowlingParty.saveRecord();
         return lane;
 
 
     }
 
-    /*  ***********************************************************************
+    private double fee = 0;
+    @Override
+    public boolean checkOut() {
+        activeBowlingParty = BowlingParty.getByBowler(leadBowler);
+        if (activeBowlingParty == null) {
+            return false;
+        }
+
+        fee = 15.99;            // Stub for real calculation
+
+
+        return true;
+    }
+
+    @Override
+    public double getFees() {
+        return fee;
+    }
+
+    @Override
+    public int getLane() {
+        return activeBowlingParty.getInteger("lane");
+    }
+
+    private int numCreditCards;
+    private double individualfee;
+
+    @Override
+    public void setNumCreditCards(int n) {
+        numCreditCards = n;
+        individualfee = ((int) (100 * fee / n))/100.0;
+    }
+
+    @Override
+    public int makePayment() {
+        String ccInfo = CreditCardService.readCreditCard();
+        if (ccInfo.equals("ERR")) {
+            return -1;
+        }
+
+        String[] fields = ccInfo.split("#");
+
+        SimpleDateFormat pd = new SimpleDateFormat("MMddyyyy");
+
+        Date expiry;
+
+        try {
+            expiry = pd.parse(fields[3]);
+        } catch (ParseException e) {
+            System.out.printf("Error parsing credit card expiration: %s\n", e.toString());
+            expiry = new Date();
+        }
+        if (PaymentService.processPayment(fields[0], fields[1], fields[2], expiry, fields[4], individualfee)) {
+            numCreditCards--;
+            if (numCreditCards == 0) {
+                return 1;
+            }
+            return 0;
+        }
+
+        return -2;
+    }
+
+/*  ***********************************************************************
 
         Manager Functions....
 

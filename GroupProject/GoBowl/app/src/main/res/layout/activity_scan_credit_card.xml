@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="gobowl.seclass.gatech.edu.gobowl.CustomerMenu">
+    tools:context="gobowl.seclass.gatech.edu.gobowl.ScanCreditCard">
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,7 +19,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:id="@+id/imageView5"
+            android:id="@+id/imageView10"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/logo" />
 
@@ -27,31 +27,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Welcome, Bowler!"
-            android:id="@+id/tvGreeting"
+            android:text="Scan Your Credit Card Now!"
+            android:id="@+id/tvScanYourCredit"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:textSize="32dp" />
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/imageView11"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/creditcard" />
 
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Go Bowling!"
-            android:id="@+id/btnGoBowling"
+            android:text="Ready!"
+            android:id="@+id/btnScanCard"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:textSize="24dp"
-            android:onClick="buttonRequestLane"
-            android:nestedScrollingEnabled="true" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Finish Bowling"
-            android:id="@+id/btnFinishBowling"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:textSize="24dp"
-            android:onClick="buttonCheckout" />
+            android:layout_marginTop="10dp"
+            android:onClick="buttonNextCard"
+            android:nestedScrollingEnabled="false" />
     </LinearLayout>
 </RelativeLayout>

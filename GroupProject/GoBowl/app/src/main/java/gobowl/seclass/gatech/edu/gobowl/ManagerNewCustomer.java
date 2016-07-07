@@ -44,7 +44,7 @@ public class ManagerNewCustomer extends AppCompatActivity {
         cd.dialog("New Customer", "Customer " + first + " created!",
                 new CheesyCallback() {
                     @Override
-                    public void allDone() {
+                    public void allDone(android.content.Context parent) {
                         finish();
                     }
                 });

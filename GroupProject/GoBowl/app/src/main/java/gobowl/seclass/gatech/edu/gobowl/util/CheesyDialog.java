@@ -26,7 +26,7 @@ public class CheesyDialog {
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
                         if (callback != null) {
-                            callback.allDone();
+                            callback.allDone(parent);
                         }
                     }
                 });

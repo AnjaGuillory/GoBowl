@@ -48,6 +48,9 @@ public class BowlingParty extends DatabaseEntity {
     public static BowlingParty getByBowler(Bowler b) {
         String id = b.getString("id");
         BowlerToParty b2p = BowlerToParty.getByBowler(id);
+        if (b2p == null) {
+            return null;
+        }
 
         BowlingParty bp = new BowlingParty();
         bp.fetchById(b2p.getString("partyid"));

@@ -23,7 +23,9 @@
 
         <activity android:name=".ManagerNewCustomer" />
         <activity android:name=".CustomerNumBowlers" />
-        <activity android:name=".CustomerLaneDisplay"></activity>
+        <activity android:name=".CustomerLaneDisplay" />
+        <activity android:name=".CheckOut" />
+        <activity android:name=".ScanCreditCard"></activity>
     </application>
 
 </manifest>

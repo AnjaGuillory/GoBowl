@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import gobowl.seclass.gatech.edu.gobowl.controller.BowlingSystem;
+import gobowl.seclass.gatech.edu.gobowl.util.CheesyDialog;
 
 public class CustomerMenu extends AppCompatActivity {
     private BowlingSystem bsys = BowlingSystem.getInstance();
@@ -26,6 +27,17 @@ public class CustomerMenu extends AppCompatActivity {
 
     public void buttonRequestLane(View view) {
         Intent myIntent = new Intent(this, CustomerNumBowlers.class);
+        this.startActivity(myIntent);
+    }
+
+    public void buttonCheckout(View view) {
+        if (!BowlingSystem.getInstance().checkOut()) {
+            CheesyDialog cd = new CheesyDialog(this);
+            cd.dialog("Error", "You are not bowling and cannot check out", null);
+            return;
+        }
+
+        Intent myIntent = new Intent(this, CheckOut.class);
         this.startActivity(myIntent);
     }
 
