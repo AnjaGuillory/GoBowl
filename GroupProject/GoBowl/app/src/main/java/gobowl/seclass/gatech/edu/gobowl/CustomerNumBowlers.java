@@ -5,6 +5,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+
+import gobowl.seclass.gatech.edu.gobowl.System.BowlingSystem;
+import gobowl.seclass.gatech.edu.gobowl.util.CheesyCallback;
+import gobowl.seclass.gatech.edu.gobowl.util.CheesyDialog;
 
 public class CustomerNumBowlers extends AppCompatActivity {
 
@@ -16,28 +21,59 @@ public class CustomerNumBowlers extends AppCompatActivity {
 
 
     public void buttonGetOthers(View view) {
-
+        int numBowlers;
         Intent myIntent;
+        EditText etNum = (EditText) findViewById(R.id.etNumBowlers);
 
-        myIntent = new Intent(this, CustomerLaneDisplay.class);
-        myIntent.putExtra("lane","S01");
-        startActivity(myIntent);
+        try {
+            numBowlers = Integer.parseInt(etNum.getText().toString());
+        } catch (Exception e) {
+            CheesyDialog cd = new CheesyDialog(this);
+            cd.dialog("Error", "Please enter a valid number", null);
+            return;
+        }
 
-/*
+        if (BowlingSystem.getInstance().requestLane(numBowlers)) {
+            myIntent = new Intent(this, CustomerLaneDisplay.class);
+            myIntent.putExtra("lane","01");
+            startActivity(myIntent);
+            return;
+        }
+
         myIntent = new Intent(this, CustomerLogin.class);
-        myIntent.putExtra("title","Scan Card to Log in");
+        myIntent.putExtra("title","Scan Next Bowler Please");
+        myIntent.putExtra("action", "next");
         startActivityForResult(myIntent, 0);
-*/
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Intent myIntent;
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == Activity.RESULT_OK) {
             String why = data.getStringExtra("why");
-            if (why != null && why.equals("login")) {
-                Intent myIntent = new Intent(this, CustomerMenu.class);
-                this.startActivity(myIntent);
+            if (why != null && why.equals("next")) {
+//                if (data.getIntExtra("status", 1) == 1) {         // THIS DOES NOT WORK FOR SOME UNKNOWN REASON!!
+                if (Integer.parseInt(data.getStringExtra("status")) == 1) {
+                    myIntent = new Intent(this, CustomerLaneDisplay.class);
+                    myIntent.putExtra("lane","01");
+                    startActivity(myIntent);
+                    return;
+                }
+
+                CheesyDialog cd = new CheesyDialog(this);
+                cd.dialog("Bowling Party", "Customer Scanned!",
+                        new CheesyCallback() {
+                            @Override
+                            public void allDone() {
+                                Intent myIntent = new Intent(CustomerNumBowlers.this, CustomerLogin.class);
+                                myIntent.putExtra("title","Scan Next Bowler Please");
+                                myIntent.putExtra("action", "next");
+                                startActivityForResult(myIntent, 0);
+
+                            }
+                        }
+                );
 
             }
         }

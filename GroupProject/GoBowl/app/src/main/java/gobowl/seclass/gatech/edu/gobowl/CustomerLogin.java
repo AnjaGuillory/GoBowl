@@ -42,17 +42,40 @@ public class CustomerLogin extends AppCompatActivity {
 
 
     public void buttonLogin(View view) {
-        BowlingSystem bsys = BowlingSystem.getInstance();
-        String first = bsys.login();
+        Intent intent = getIntent();
+        String action = intent.getStringExtra("action");
 
-        if (first.length() == 0) {
-            dialog("Error", "Your card did not scan.  Try again");
+        if (action.equals("login")) {
+
+            BowlingSystem bsys = BowlingSystem.getInstance();
+            String first = bsys.login();
+
+            if (first.length() == 0) {
+                dialog("Error", "Your card did not scan.  Try again");
+                return;
+            }
+            Intent resultIntent = new Intent();
+            resultIntent.putExtra("why", "login");
+            setResult(Activity.RESULT_OK, resultIntent);
+            finish();
             return;
         }
 
-        Intent resultIntent = new Intent();
-        resultIntent.putExtra("why", "login");
-        setResult(Activity.RESULT_OK, resultIntent);
-        finish();
+        if (action.equals("next")) {
+            BowlingSystem bsys = BowlingSystem.getInstance();
+            int status = bsys.nextBowler();
+
+            if (status == -1) {
+                dialog("Error", "Your card did not scan.  Try again");
+                return;
+            }
+
+            Intent resultIntent = new Intent();
+            resultIntent.putExtra("why", "next");
+            resultIntent.putExtra("status", Integer.toString(status));
+            setResult(Activity.RESULT_OK, resultIntent);
+            finish();
+        }
+
     }
 }

@@ -93,9 +93,9 @@ public class Persistence {
         }
     }
 
-    public HashMap<String, String> getRecord(String table, String id) {
-        String [] args = { id };
-        Cursor cursor = db.query(false, table, null, "id = ?",args, null, null, null, null);
+    public HashMap<String, String> getRecordbySQL(String sql) {
+        Cursor cursor = db.rawQuery(sql, null);
+
         if (cursor.getCount() == 0) {
             return null;    // Did not find!
         }
@@ -112,6 +112,18 @@ public class Persistence {
 
         return columns;
     }
+
+    public HashMap<String, String> getRecordById(String table, String id) {
+        String sql = String.format("SELECT * FROM %s WHERE %s='%s'", table, "id", id);
+        return getRecordbySQL(sql);
+    }
+
+    public HashMap<String, String> getRecordByColumn(String table, String colname, String colval) {
+        String sql = String.format("SELECT * FROM %s WHERE %s='%s'", table, colname, colval);
+        return getRecordbySQL(sql);
+    }
+
+
 
     /*
         Retrieve all id values for a table...

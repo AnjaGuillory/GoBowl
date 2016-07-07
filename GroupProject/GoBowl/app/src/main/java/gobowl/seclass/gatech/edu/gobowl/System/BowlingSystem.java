@@ -1,5 +1,6 @@
 package gobowl.seclass.gatech.edu.gobowl.System;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import edu.gatech.seclass.services.PrintingService;
@@ -17,11 +18,17 @@ public class BowlingSystem implements Customer, Manager {
 
     private Bowler leadBowler = null;
 
-    /*
-        Login: Hit the scanner, look up the customer.
 
-        Returns first name if found, or "" if not.
-     */
+
+    /*  ***********************************************************************
+
+        Customer Functions....
+
+        *********************************************************************** */
+
+
+    /*  Login: Hit the scanner, look up the customer.
+        Returns first name if found, or "" if not.                              */
 
     @Override
     public String login() {
@@ -37,6 +44,7 @@ public class BowlingSystem implements Customer, Manager {
         return leadBowler.getString("first");
     }
 
+    /*  get the first name of the lead bowler (for greeting purpooses)          */
     @Override
     public String getFirstName() {
         if (leadBowler == null) {
@@ -46,11 +54,49 @@ public class BowlingSystem implements Customer, Manager {
         return leadBowler.getString("first");
     }
 
+    private int totalBowlers;
+    private int bowlersSoFar;
+    private ArrayList<Bowler> party;
 
 
-    /*
-        Manager Functionality
-     */
+    @Override
+    public boolean requestLane(int numberOfBowlers) {
+        totalBowlers = numberOfBowlers;
+        bowlersSoFar = 1;
+        party = new ArrayList<>();
+        party.add(leadBowler);
+        if (totalBowlers == 1) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public int nextBowler() {
+        String id;
+        id = QRCodeService.scanQRCode();
+
+        if (id.equals("ERR")) {
+            return -1;
+        }
+
+        party.add(new Bowler(id));
+        bowlersSoFar++;
+
+        if (bowlersSoFar == totalBowlers) {
+            return 1;
+        }
+
+        return 0;
+
+
+    }
+
+    /*  ***********************************************************************
+
+        Manager Functions....
+
+        *********************************************************************** */
 
     @Override
     public void addCustomer(String first, String last, String email) {

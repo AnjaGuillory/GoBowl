@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public void buttonCustomer(View view) {
         Intent myIntent = new Intent(this, CustomerLogin.class);
         myIntent.putExtra("title","Scan Card to Log in");
+        myIntent.putExtra("action", "login");
         startActivityForResult(myIntent, 0);
     }
 
