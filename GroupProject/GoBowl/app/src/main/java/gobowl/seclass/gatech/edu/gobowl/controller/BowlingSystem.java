@@ -1,10 +1,12 @@
-package gobowl.seclass.gatech.edu.gobowl.System;
+package gobowl.seclass.gatech.edu.gobowl.controller;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import edu.gatech.seclass.services.PrintingService;
 import edu.gatech.seclass.services.QRCodeService;
+import gobowl.seclass.gatech.edu.gobowl.models.Bowler;
+import gobowl.seclass.gatech.edu.gobowl.models.BowlingParty;
+import gobowl.seclass.gatech.edu.gobowl.models.Lane;
 
 /**
  * Created by charles on 7/6/16.
@@ -56,15 +58,15 @@ public class BowlingSystem implements Customer, Manager {
 
     private int totalBowlers;
     private int bowlersSoFar;
-    private ArrayList<Bowler> party;
+    BowlingParty bp;
 
 
     @Override
     public boolean requestLane(int numberOfBowlers) {
         totalBowlers = numberOfBowlers;
         bowlersSoFar = 1;
-        party = new ArrayList<>();
-        party.add(leadBowler);
+        bp = new BowlingParty();
+        bp.addBowler(leadBowler);
         if (totalBowlers == 1) {
             return true;
         }
@@ -80,7 +82,9 @@ public class BowlingSystem implements Customer, Manager {
             return -1;
         }
 
-        party.add(new Bowler(id));
+        Bowler b = new Bowler(id);
+        bp.addBowler(b);
+
         bowlersSoFar++;
 
         if (bowlersSoFar == totalBowlers) {
@@ -88,6 +92,17 @@ public class BowlingSystem implements Customer, Manager {
         }
 
         return 0;
+
+
+    }
+
+    @Override
+    public int startBowling() {
+        int lane = Lane.getFreeLane();
+        bp.setInteger("lane", lane);
+        bp.setInteger("active", 1);
+        bp.saveRecord();
+        return lane;
 
 
     }

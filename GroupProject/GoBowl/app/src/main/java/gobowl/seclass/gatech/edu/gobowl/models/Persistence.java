@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl.System;
+package gobowl.seclass.gatech.edu.gobowl.models;
 
 import android.database.Cursor;
 import 	android.database.sqlite.*;
@@ -24,7 +24,7 @@ public class Persistence {
 
     //  If we have changed the database schema in some fashion, this is used
     //  to flag the change so we know to drop the tables and recreate them
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 3;
 
 
     @Nullable
@@ -48,9 +48,17 @@ public class Persistence {
             db.execSQL("insert into customers values('9441', 'Betty', 'Monroe', 'Monroe@email.fake', 'false', '10.00')");
             db.execSQL("insert into customers values('0f0e', 'Everett', 'Scott', 'Scott@email.fake', 'true', '200.00')");
 
-            //  Create the lane data
-            db.execSQL("create table lanes (id, lanestatus)");
-            db.execSQL("insert into lanes values('1', '0')");
+
+            //  Create the bowling party data...
+            db.execSQL("create table bowlingparty (id PRIMARY KEY, numberofbowlers, starttime, endtime, lane, active)");
+
+            //  Create the bowling part to bowler intersection table
+            db.execSQL("create table bowlertoparty (id PRIMARY KEY, bowlerid, partyid)");
+
+
+//            //  Create the lane data
+//            db.execSQL("create table lanes (id, lanestatus)");
+//            db.execSQL("insert into lanes values('1', '0')");
 
 
             return db;

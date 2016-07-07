@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import gobowl.seclass.gatech.edu.gobowl.System.BowlingSystem;
+import gobowl.seclass.gatech.edu.gobowl.controller.BowlingSystem;
 import gobowl.seclass.gatech.edu.gobowl.util.CheesyCallback;
 import gobowl.seclass.gatech.edu.gobowl.util.CheesyDialog;
 
@@ -35,7 +35,6 @@ public class CustomerNumBowlers extends AppCompatActivity {
 
         if (BowlingSystem.getInstance().requestLane(numBowlers)) {
             myIntent = new Intent(this, CustomerLaneDisplay.class);
-            myIntent.putExtra("lane","01");
             startActivity(myIntent);
             return;
         }
@@ -56,7 +55,6 @@ public class CustomerNumBowlers extends AppCompatActivity {
 //                if (data.getIntExtra("status", 1) == 1) {         // THIS DOES NOT WORK FOR SOME UNKNOWN REASON!!
                 if (Integer.parseInt(data.getStringExtra("status")) == 1) {
                     myIntent = new Intent(this, CustomerLaneDisplay.class);
-                    myIntent.putExtra("lane","01");
                     startActivity(myIntent);
                     return;
                 }

@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl.System;
+package gobowl.seclass.gatech.edu.gobowl.controller;
 
 /**
  * Created by charles on 7/7/16.

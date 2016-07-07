@@ -1,7 +1,6 @@
-package gobowl.seclass.gatech.edu.gobowl.System;
+package gobowl.seclass.gatech.edu.gobowl.models;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Created by charles on 7/6/16.

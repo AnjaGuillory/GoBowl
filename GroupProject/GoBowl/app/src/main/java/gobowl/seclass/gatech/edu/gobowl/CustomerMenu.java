@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import gobowl.seclass.gatech.edu.gobowl.System.BowlingSystem;
+import gobowl.seclass.gatech.edu.gobowl.controller.BowlingSystem;
 
 public class CustomerMenu extends AppCompatActivity {
     private BowlingSystem bsys = BowlingSystem.getInstance();

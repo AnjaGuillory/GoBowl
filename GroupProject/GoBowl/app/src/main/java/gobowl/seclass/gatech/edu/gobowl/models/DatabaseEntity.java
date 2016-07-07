@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl.System;
+package gobowl.seclass.gatech.edu.gobowl.models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -75,15 +75,23 @@ abstract class DatabaseEntity {
 
     public String generateId() {
         //  Generate a new, unique id.  Normally we'd allow the database to do this,
-        //  But since the
-        ArrayList<String> currentIds = Persistence.getInstance().allIds(tableName);
+        //  But since the libraries have canned data with sparse ids, we cannot
+
         int iNewId = -1;
         String newId;
-        for (;;) {
-            iNewId++;
+
+        ArrayList<String> currentIds = Persistence.getInstance().allIds(tableName);
+
+        if (currentIds == null) {   // Empty table, start at 0!
+            iNewId = 0;
             newId = String.format("%04x", iNewId);
-            if (!currentIds.contains(newId)) {
-                break;
+        } else {
+            for (; ; ) {
+                iNewId++;
+                newId = String.format("%04x", iNewId);
+                if (!currentIds.contains(newId)) {
+                    break;
+                }
             }
         }
 
@@ -93,7 +101,7 @@ abstract class DatabaseEntity {
     }
 
     public void saveRecord() {
-        if (! dirty) {
+        if (! dirty && ! newRecord) {
             return;     // Nothing to do!
         }
 

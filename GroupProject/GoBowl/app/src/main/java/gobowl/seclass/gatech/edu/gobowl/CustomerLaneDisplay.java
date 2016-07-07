@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import gobowl.seclass.gatech.edu.gobowl.controller.BowlingSystem;
+
 public class CustomerLaneDisplay extends AppCompatActivity {
 
     @Override
@@ -13,15 +15,11 @@ public class CustomerLaneDisplay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_lane_display);
 
+        int lane = BowlingSystem.getInstance().startBowling();
 
         Intent intent = getIntent();
-        String title = intent.getStringExtra("lane");
         TextView tv = (TextView)  findViewById(R.id.tvLaneNumber);
-        if (title != null && title.length() != 0) {
-            tv.setText(title);
-        } else {
-            tv.setText("??");
-        }
+        tv.setText(String.format("%02d", lane));
 
     }
 
