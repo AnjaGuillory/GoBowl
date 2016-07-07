@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import gobowl.seclass.gatech.edu.gobowl.R;
+import edu.gatech.seclass.gobowl.test.R;
 
 public class ManagerMenu extends AppCompatActivity {
 

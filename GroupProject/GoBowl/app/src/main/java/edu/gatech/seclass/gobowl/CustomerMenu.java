@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import gobowl.seclass.gatech.edu.gobowl.R;
+import edu.gatech.seclass.gobowl.test.R;
 import edu.gatech.seclass.gobowl.controller.BowlingSystem;
 import edu.gatech.seclass.gobowl.util.CheesyDialog;
 

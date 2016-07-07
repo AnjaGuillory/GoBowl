@@ -1,6 +1,6 @@
 package edu.gatech.seclass.gobowl;
 
-import gobowl.seclass.gatech.edu.gobowl.R;
+import edu.gatech.seclass.gobowl.test.R;
 import edu.gatech.seclass.gobowl.controller.BowlingSystem;
 
 import android.app.Activity;

@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl;
+package edu.gatech.seclass.gobowl.test;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
