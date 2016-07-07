@@ -5,6 +5,7 @@ import 	android.database.sqlite.*;
 import android.support.annotation.Nullable;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -56,21 +57,51 @@ public class Persistence {
         }
     }
 
-    public HashMap<String, String> getCustomer(String id) {
+    public HashMap<String, String> getRecord(String table, String id) {
         String [] args = { id };
-        Cursor cursor = db.query(false, "customers", null, "id = ?",args, null, null, null, null);
+        Cursor cursor = db.query(false, table, null, "id = ?",args, null, null, null, null);
         if (cursor.getCount() == 0) {
             return null;    // Did not find!
         }
 
         cursor.moveToFirst();
 
-        HashMap<String, String> cust = new HashMap<>();
+        HashMap<String, String> columns = new HashMap<>();
 
         for (int i=0;i<cursor.getColumnCount();i++) {
-            cust.put(cursor.getColumnName(i), cursor.getString(i));
+            columns.put(cursor.getColumnName(i), cursor.getString(i));
         }
 
-        return cust;
+        cursor.close();
+
+        return columns;
     }
+
+    /*
+        Retrieve all id values for a table...
+     */
+    public ArrayList<String> allIds(String table) {
+        Cursor cursor = db.query(false, table, null, null, null, null, null, null, null);
+        if (cursor.getCount() == 0) {
+            return null;    // Did not find!
+        }
+
+        cursor.moveToFirst();
+
+        ArrayList<String> ids = new ArrayList<>();
+
+        while (!cursor.isAfterLast()) {
+            ids.add(cursor.getString(cursor.getColumnIndex("id")));
+            cursor.moveToNext();
+        }
+
+        cursor.close();
+
+        return ids;
+    }
+
+    public void doInsertorUpdate(String sql) {
+        db.execSQL(sql);
+    }
+
 }

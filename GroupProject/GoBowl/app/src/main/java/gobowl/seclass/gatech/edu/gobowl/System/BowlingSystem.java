@@ -2,12 +2,13 @@ package gobowl.seclass.gatech.edu.gobowl.System;
 
 import java.util.HashMap;
 
+import edu.gatech.seclass.services.PrintingService;
 import edu.gatech.seclass.services.QRCodeService;
 
 /**
  * Created by charles on 7/6/16.
  */
-public class BowlingSystem implements Customer {
+public class BowlingSystem implements Customer, Manager {
     private static BowlingSystem ourInstance = new BowlingSystem();
 
     public static BowlingSystem getInstance() {
@@ -33,7 +34,7 @@ public class BowlingSystem implements Customer {
 
         leadBowler = new Bowler(id);
 
-        return leadBowler.firstName;
+        return leadBowler.getString("first");
     }
 
     @Override
@@ -42,6 +43,26 @@ public class BowlingSystem implements Customer {
             System.out.printf("*** ERROR: BowlingSystem: No Lead Bowler!\n");
             return "";
         }
-        return leadBowler.firstName;
+        return leadBowler.getString("first");
+    }
+
+
+
+    /*
+        Manager Functionality
+     */
+
+    @Override
+    public void addCustomer(String first, String last, String email) {
+        Bowler b = new Bowler();
+        b.setString("first", first);
+        b.setString("last", last);
+        b.setString("email", email);
+        b.saveRecord();
+
+        boolean cardPrinted;
+         do {
+             cardPrinted = PrintingService.printCard(first, last, b.getString("id"));
+         } while (! cardPrinted);
     }
 }

@@ -17,10 +17,11 @@
         </activity>
         <activity android:name=".ManagerMenu" />
         <activity android:name=".CustomerMenu" />
-        <activity android:name=".CustomerLogin"></activity>
-        <uses-permission
-            android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-            />
+        <activity android:name=".CustomerLogin" />
+
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+        <activity android:name=".ManagerNewCustomer"></activity>
     </application>
 
 </manifest>
