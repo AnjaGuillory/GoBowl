@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="gobowl.seclass.gatech.edu.gobowl.MainActivity">
+    tools:context="gobowl.seclass.gatech.edu.gobowl.CustomerMenu">
 
     <LinearLayout
         android:orientation="vertical"
@@ -18,45 +18,37 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:layout_height="150dp"
+            android:id="@+id/imageView5"
+            android:layout_gravity="center_horizontal"
             android:src="@drawable/logo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Log in as:"
-            android:id="@+id/textView2"
+            android:text="Welcome, Bowler!"
+            android:id="@+id/tvGreeting"
             android:layout_gravity="center_horizontal"
-            android:textSize="50dp" />
+            android:layout_marginTop="20dp"
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Manager"
-            android:id="@+id/btnManager"
+            android:text="Go Bowling!"
+            android:id="@+id/btnGoBowling"
             android:layout_gravity="center_horizontal"
-            android:onClick="buttonManager"
-            android:textSize="32dp"
-            android:layout_marginTop="20dp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_marginTop="20dp"
+            android:textSize="24dp" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Customer"
-            android:id="@+id/btnCustomer"
+            android:text="Finish Bowling"
+            android:id="@+id/btnFinishBowling"
             android:layout_gravity="center_horizontal"
-            android:onClick="buttonCustomer"
-            android:textSize="32dp"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:textSize="24dp" />
     </LinearLayout>
-
 </RelativeLayout>
