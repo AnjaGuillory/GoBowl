@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl.util;
+package edu.gatech.seclass.gobowl.util;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;

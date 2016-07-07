@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl;
+package edu.gatech.seclass.gobowl;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import gobowl.seclass.gatech.edu.gobowl.controller.BowlingSystem;
+import gobowl.seclass.gatech.edu.gobowl.R;
+import edu.gatech.seclass.gobowl.controller.BowlingSystem;
 
 public class CheckOut extends AppCompatActivity {
 

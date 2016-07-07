@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl.util;
+package edu.gatech.seclass.gobowl.util;
 
 /**
  * Created by charles on 7/7/16.

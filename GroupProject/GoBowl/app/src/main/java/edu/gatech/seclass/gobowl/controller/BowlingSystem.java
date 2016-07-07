@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl.controller;
+package edu.gatech.seclass.gobowl.controller;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,9 +8,9 @@ import edu.gatech.seclass.services.CreditCardService;
 import edu.gatech.seclass.services.PaymentService;
 import edu.gatech.seclass.services.PrintingService;
 import edu.gatech.seclass.services.QRCodeService;
-import gobowl.seclass.gatech.edu.gobowl.models.Bowler;
-import gobowl.seclass.gatech.edu.gobowl.models.BowlingParty;
-import gobowl.seclass.gatech.edu.gobowl.models.Lane;
+import edu.gatech.seclass.gobowl.models.Bowler;
+import edu.gatech.seclass.gobowl.models.BowlingParty;
+import edu.gatech.seclass.gobowl.models.Lane;
 
 /**
  * Created by charles on 7/6/16.

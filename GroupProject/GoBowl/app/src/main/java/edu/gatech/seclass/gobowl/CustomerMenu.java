@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl;
+package edu.gatech.seclass.gobowl;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import gobowl.seclass.gatech.edu.gobowl.controller.BowlingSystem;
-import gobowl.seclass.gatech.edu.gobowl.util.CheesyDialog;
+import gobowl.seclass.gatech.edu.gobowl.R;
+import edu.gatech.seclass.gobowl.controller.BowlingSystem;
+import edu.gatech.seclass.gobowl.util.CheesyDialog;
 
 public class CustomerMenu extends AppCompatActivity {
     private BowlingSystem bsys = BowlingSystem.getInstance();

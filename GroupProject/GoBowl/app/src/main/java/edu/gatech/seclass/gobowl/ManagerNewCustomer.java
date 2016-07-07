@@ -1,13 +1,14 @@
-package gobowl.seclass.gatech.edu.gobowl;
+package edu.gatech.seclass.gobowl;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import gobowl.seclass.gatech.edu.gobowl.controller.BowlingSystem;
-import gobowl.seclass.gatech.edu.gobowl.util.CheesyCallback;
-import gobowl.seclass.gatech.edu.gobowl.util.CheesyDialog;
+import gobowl.seclass.gatech.edu.gobowl.R;
+import edu.gatech.seclass.gobowl.controller.BowlingSystem;
+import edu.gatech.seclass.gobowl.util.CheesyCallback;
+import edu.gatech.seclass.gobowl.util.CheesyDialog;
 
 /*
     Activity for creating a new customer ... just grabs the three input fields

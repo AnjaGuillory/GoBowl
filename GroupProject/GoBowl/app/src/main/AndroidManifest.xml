@@ -8,24 +8,24 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="edu.gatech.seclass.gobowl.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ManagerMenu" />
-        <activity android:name=".CustomerMenu" />
-        <activity android:name=".CustomerLogin" />
+        <activity android:name="edu.gatech.seclass.gobowl.ManagerMenu" />
+        <activity android:name="edu.gatech.seclass.gobowl.CustomerMenu" />
+        <activity android:name="edu.gatech.seclass.gobowl.CustomerLogin" />
 
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-        <activity android:name=".ManagerNewCustomer" />
-        <activity android:name=".CustomerNumBowlers" />
-        <activity android:name=".CustomerLaneDisplay" />
-        <activity android:name=".CheckOut" />
-        <activity android:name=".ScanCreditCard"></activity>
+        <activity android:name="edu.gatech.seclass.gobowl.ManagerNewCustomer" />
+        <activity android:name="edu.gatech.seclass.gobowl.CustomerNumBowlers" />
+        <activity android:name="edu.gatech.seclass.gobowl.CustomerLaneDisplay" />
+        <activity android:name="edu.gatech.seclass.gobowl.CheckOut" />
+        <activity android:name="edu.gatech.seclass.gobowl.ScanCreditCard"></activity>
     </application>
 
 </manifest>

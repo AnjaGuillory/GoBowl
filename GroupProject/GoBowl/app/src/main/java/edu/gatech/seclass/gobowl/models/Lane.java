@@ -1,4 +1,4 @@
-package gobowl.seclass.gatech.edu.gobowl.models;
+package edu.gatech.seclass.gobowl.models;
 
 import java.util.HashMap;
 
