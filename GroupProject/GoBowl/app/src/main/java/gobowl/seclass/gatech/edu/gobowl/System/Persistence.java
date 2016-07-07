@@ -22,6 +22,10 @@ public class Persistence {
 
     private SQLiteDatabase db = null;
 
+    //  If we have changed the database schema in some fashion, this is used
+    //  to flag the change so we know to drop the tables and recreate them
+    private static final int DATABASE_VERSION = 1;
+
 
     @Nullable
     private SQLiteDatabase createDB(File dbfile) {
@@ -30,12 +34,24 @@ public class Persistence {
             //  This is required to ensure that the directories leading down to our database
             //  actually exist before we create it...
             dbfile.getParentFile().mkdirs();
+            dbfile.delete();
 
             db = SQLiteDatabase.openOrCreateDatabase(dbname, null);
+
+            //  Create the version number ...
+            db.execSQL("create table schemaversion (version)");
+            db.execSQL(String.format("insert into schemaversion values(%d)", DATABASE_VERSION));
+
+            //  Create the customer table with the same data as in the stub library provided...
             db.execSQL("create table customers (id PRIMARY KEY, first, last, email, vip, ytd)");
             db.execSQL("insert into customers values('86ff', 'Ralph', 'Hapschatt', 'Hapschatt@email.fake', 'true', '100.00')");
             db.execSQL("insert into customers values('9441', 'Betty', 'Monroe', 'Monroe@email.fake', 'false', '10.00')");
             db.execSQL("insert into customers values('0f0e', 'Everett', 'Scott', 'Scott@email.fake', 'true', '200.00')");
+
+            //  Create the lane data
+            db.execSQL("create table lanes (id, lanestatus)");
+            db.execSQL("insert into lanes values('1', '0')");
+
 
             return db;
         } catch (Exception e) {
@@ -49,10 +65,30 @@ public class Persistence {
 
     public void initDB(File dbFile) {
         dbname = dbFile.getAbsolutePath();
+        boolean needToCreateDB = false;
         try {
             db = SQLiteDatabase.openDatabase(dbname,  null, SQLiteDatabase.OPEN_READWRITE);
+            Cursor c;
+            c = db.rawQuery("SELECT count(*) FROM sqlite_master WHERE type='table' AND name='schemaversion'", null);
+            c.moveToFirst();
+            if (c.getInt(0) == 0) {
+                needToCreateDB = true;
+                c.close();
+            } else {
+                c.close();
+                c = db.rawQuery("SELECT version FROM schemaversion", null);
+                c.moveToFirst();
+                if (c.getInt(0) != DATABASE_VERSION) {
+                    needToCreateDB = true;
+                }
+                c.close();
+            }
         } catch (SQLiteException e) {
             // No Database ....
+            needToCreateDB = true;
+        }
+
+        if (needToCreateDB) {
             db = createDB(dbFile);
         }
     }

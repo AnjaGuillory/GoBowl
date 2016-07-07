@@ -10,12 +10,23 @@ import android.widget.EditText;
 
 import gobowl.seclass.gatech.edu.gobowl.System.Bowler;
 import gobowl.seclass.gatech.edu.gobowl.System.BowlingSystem;
+import gobowl.seclass.gatech.edu.gobowl.util.CheesyCallback;
+import gobowl.seclass.gatech.edu.gobowl.util.CheesyDialog;
 
+/*
+    Activity for creating a new customer ... just grabs the three input fields
+    when the user is ready and sends them along...
+
+ */
 public class ManagerNewCustomer extends AppCompatActivity {
 
     private EditText etFirst;
     private EditText etLast;
     private EditText etEmail;
+
+    /*
+        Code to show an alert
+     */
 
     private void dialog(String title, String message) {
         AlertDialog alertDialog = new AlertDialog.Builder(ManagerNewCustomer.this).create();
@@ -50,7 +61,15 @@ public class ManagerNewCustomer extends AppCompatActivity {
 
         bsys.addCustomer(first, last, email);
 
-        dialog("New Customer", "Customer " + first + " created!");
+        CheesyDialog cd = new CheesyDialog(ManagerNewCustomer.this);
+
+        cd.dialog("New Customer", "Customer " + first + " created!",
+                new CheesyCallback() {
+                    @Override
+                    public void allDone() {
+                        finish();
+                    }
+                });
 
 
     }
