@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="gobowl.seclass.gatech.edu.gobowl.CustomerLogin">
+    tools:context="gobowl.seclass.gatech.edu.gobowl.CustomerNumBowlers">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,7 +20,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:id="@+id/imageView3"
+            android:id="@+id/imageView7"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/logo" />
 
@@ -28,29 +28,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/tvTitle"
+            android:text="Request a Lane!"
+            android:id="@+id/textView8"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:text="PlaceHolder"
-            android:textSize="32dp" />
+            android:layout_marginTop="40dp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:id="@+id/imageView4"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/scancard"
-            android:layout_marginTop="20dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="How Many Bowlers?"
+                android:id="@+id/textView7" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText" />
+        </LinearLayout>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Scan Card Now!"
-            android:id="@+id/button4"
-            android:layout_gravity="center_horizontal"
+            android:text="Let&apos;s Get Started!"
+            android:id="@+id/button"
             android:layout_marginTop="20dp"
-            android:textSize="32dp"
-            android:onClick="buttonLogin" />
-
+            android:onClick="buttonGetOthers"
+            android:textSize="24dp" />
     </LinearLayout>
 </RelativeLayout>

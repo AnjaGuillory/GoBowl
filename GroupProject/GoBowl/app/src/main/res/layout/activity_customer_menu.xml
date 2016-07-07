@@ -40,7 +40,9 @@
             android:id="@+id/btnGoBowling"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:textSize="24dp" />
+            android:textSize="24dp"
+            android:onClick="buttonRequestLane"
+            android:nestedScrollingEnabled="true" />
 
         <Button
             android:layout_width="fill_parent"

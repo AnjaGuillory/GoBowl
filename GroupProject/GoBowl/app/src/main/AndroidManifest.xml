@@ -21,7 +21,9 @@
 
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-        <activity android:name=".ManagerNewCustomer"></activity>
+        <activity android:name=".ManagerNewCustomer" />
+        <activity android:name=".CustomerNumBowlers" />
+        <activity android:name=".CustomerLaneDisplay"></activity>
     </application>
 
 </manifest>

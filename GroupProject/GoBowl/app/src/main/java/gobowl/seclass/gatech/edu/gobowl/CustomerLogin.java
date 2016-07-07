@@ -2,12 +2,14 @@ package gobowl.seclass.gatech.edu.gobowl;
 
 import gobowl.seclass.gatech.edu.gobowl.System.BowlingSystem;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class CustomerLogin extends AppCompatActivity {
 
@@ -15,6 +17,14 @@ public class CustomerLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_login);
+        Intent intent = getIntent();
+        String title = intent.getStringExtra("title");
+        TextView tv = (TextView)  findViewById(R.id.tvTitle);
+        if (title != null && title.length() != 0) {
+            tv.setText(title);
+        } else {
+            tv.setText("");
+        }
     }
 
     private void dialog(String title, String message) {
@@ -40,9 +50,9 @@ public class CustomerLogin extends AppCompatActivity {
             return;
         }
 
-        Intent myIntent = new Intent(CustomerLogin.this, CustomerMenu.class);
-        CustomerLogin.this.startActivity(myIntent);
-
-
+        Intent resultIntent = new Intent();
+        resultIntent.putExtra("why", "login");
+        setResult(Activity.RESULT_OK, resultIntent);
+        finish();
     }
 }

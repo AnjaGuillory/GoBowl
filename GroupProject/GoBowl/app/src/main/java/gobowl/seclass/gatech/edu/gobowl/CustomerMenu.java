@@ -1,7 +1,9 @@
 package gobowl.seclass.gatech.edu.gobowl;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import gobowl.seclass.gatech.edu.gobowl.System.BowlingSystem;
@@ -19,7 +21,12 @@ public class CustomerMenu extends AppCompatActivity {
         tvGreeting = (TextView) findViewById(R.id.tvGreeting);
 
         tvGreeting.setText("Welcome, " + bsys.getFirstName() + "!");
-
-
     }
+
+
+    public void buttonRequestLane(View view) {
+        Intent myIntent = new Intent(this, CustomerNumBowlers.class);
+        this.startActivity(myIntent);
+    }
+
 }

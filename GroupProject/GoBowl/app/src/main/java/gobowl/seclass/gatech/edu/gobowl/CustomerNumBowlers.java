@@ -6,32 +6,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import java.io.File;
-
-import gobowl.seclass.gatech.edu.gobowl.System.Persistence;
-
-public class MainActivity extends AppCompatActivity {
+public class CustomerNumBowlers extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        File bowlfile = this.getDatabasePath("bowler");
-        Persistence.getInstance().initDB(bowlfile);
+        setContentView(R.layout.activity_customer_num_bowlers);
     }
 
 
-    public void buttonManager(View view) {
-        Intent myIntent = new Intent(MainActivity.this, ManagerMenu.class);
-        MainActivity.this.startActivity(myIntent);
+    public void buttonGetOthers(View view) {
 
-    }
+        Intent myIntent;
 
-    public void buttonCustomer(View view) {
-        Intent myIntent = new Intent(this, CustomerLogin.class);
+        myIntent = new Intent(this, CustomerLaneDisplay.class);
+        myIntent.putExtra("lane","S01");
+        startActivity(myIntent);
+
+/*
+        myIntent = new Intent(this, CustomerLogin.class);
         myIntent.putExtra("title","Scan Card to Log in");
         startActivityForResult(myIntent, 0);
+*/
     }
 
     @Override
@@ -46,4 +42,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 }
