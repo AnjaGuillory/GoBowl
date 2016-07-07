@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import edu.gatech.seclass.gobowl.test.R;
 import edu.gatech.seclass.gobowl.controller.BowlingSystem;
 import edu.gatech.seclass.gobowl.util.CheesyDialog;
+import gobowl.seclass.gatech.edu.gobowl.R;
 
 public class CustomerMenu extends AppCompatActivity {
     private BowlingSystem bsys = BowlingSystem.getInstance();

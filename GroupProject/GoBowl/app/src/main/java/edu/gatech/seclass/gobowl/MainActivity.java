@@ -8,8 +8,8 @@ import android.view.View;
 
 import java.io.File;
 
-import edu.gatech.seclass.gobowl.test.R;
 import edu.gatech.seclass.gobowl.models.Persistence;
+import gobowl.seclass.gatech.edu.gobowl.R;
 
 public class MainActivity extends AppCompatActivity {
 
