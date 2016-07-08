@@ -5,6 +5,8 @@
 | Version | Description     |
 | --------|:---------------:|
 | V1      | Initial version |
+| V2      | Updated use case for edit customer to log customer in via id card|
+
 
 
 ## 1 Use Case Diagram
@@ -73,7 +75,7 @@ Normal Scenario:
 
 - The manager signs into the system.
 - Manager chooses "Edit Customer" from the menu system.
-- Manager enters the unique customer email address.
+- Manager scans the customer id card.
 - The system displays the information for the customer in editable form fields.
 - The Manager modifies the customer name or email address.
 - The manager chooses "Save" after data is entered.
@@ -85,8 +87,8 @@ Alternate Scenario:
 
 - The manager signs into the system.
 - Manager chooses "Edit Customer" from the menu system.
-- Manager enters the unique customer email address.
-- The system cannot find a customer for the entered email.
+- Manager scans the customer id card.
+- The system cannot find a customer.
 - The manager chooses "Cancel" to exit back to the main menu.
 
 Exceptional Scenario:

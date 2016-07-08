@@ -34,12 +34,32 @@ Android, JUnit tests, automated integration tests if time permits.
 
 ## 2 Test Cases
 
-Test Case Table
-- *its purpose*
-- *the steps necessary to perform the test*
-- *the expected result*
-- *the actual result (to be filled later)*
-- *pass/fail information (to be filled later)*
-- *any additional information you think is relevant*
+| Add Customer | Basic use case |
+| --------|:---------------:|
+| Purpose | Test the functionality of adding a new Customer to the system. |
+| Steps | Tap "Manager" button.  Tap "New Customer" button.  Fill in first name, last name, and email address.  Tap "Create Bowler!".
+| Expected Result | System displays dialog confirming creation of Customer |
+| Actual Result | Dialog is displayed showing first name |
+| Pass/fail Info | Test passes if confirmation dialog is shown |
 
-** Test cases to be further developed in deliverable 3.
+| Add Customer | Do not fill in all of information |
+| --------|:---------------:|
+| Purpose | Add new customer but don't supply all of the necessary information |
+| Steps | Tap "Manager" button.  Tap "New Customer" button.  Fill in first name but ommit last name and email address.  Tap "Create Bowler!".
+| Expected Result | System displays error dialog and then returns to data entry screen  |
+| Actual Result | Success dialog is displayed showing first name |
+| Pass/fail Info | Test passes if failure confirmation dialog is shown and returns to data-entry form |
+| ** This test is not currently passing ** |
+
+| Edit Customer |  |
+| --------|:---------------:|
+| Purpose | Test editing of customer |
+| Steps | Tap "Manager" button.  Tap "Edit Customer" button.  Tap "Scan Card Now".  The customer's information is displayed in editable text fields.  Make edits to information.  Tap "Save Bowler!" button. |
+| Expected Result | System displays success dialog showing changed data for conirmation |
+| Actual Result | Edit functionality is currently not implemented |
+| Pass/fail Info | Test passes if success dialog is shown and returns to Manager menu |
+| ** This test is not currently passing ** |
+
+
+
+
