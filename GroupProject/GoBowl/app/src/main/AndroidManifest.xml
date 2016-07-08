@@ -25,7 +25,8 @@
         <activity android:name="edu.gatech.seclass.gobowl.CustomerNumBowlers" />
         <activity android:name="edu.gatech.seclass.gobowl.CustomerLaneDisplay" />
         <activity android:name="edu.gatech.seclass.gobowl.CheckOut" />
-        <activity android:name="edu.gatech.seclass.gobowl.ScanCreditCard"></activity>
+        <activity android:name="edu.gatech.seclass.gobowl.ScanCreditCard" />
+        <activity android:name="edu.gatech.seclass.gobowl.ManagerFindCustomer"></activity>
     </application>
 
 </manifest>

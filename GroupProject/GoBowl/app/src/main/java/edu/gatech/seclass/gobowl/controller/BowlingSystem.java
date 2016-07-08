@@ -193,4 +193,58 @@ public class BowlingSystem implements Customer, Manager {
              cardPrinted = PrintingService.printCard(first, last, b.getString("id"));
          } while (! cardPrinted);
     }
+
+    private Bowler customer;
+
+    @Override
+    public boolean findCustomer(String last, String email) {
+        if (last != null && last.length() > 0) {
+            customer = Bowler.findByName(last);
+            if (customer != null) {
+                return true;
+            }
+        }
+
+        if (email != null && email.length() > 0) {
+            customer = Bowler.findByEmail(email);
+            if (customer != null) {
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+    @Override
+    public boolean reprintCard() {
+        // Just loop until printed, darn it!
+        while (true) {
+            if (PrintingService.printCard(customer.getString("first"), customer.getString("last"), customer.getString("id"))) {
+                return true;
+            }
+        }
+    }
+
+    @Override
+    public String getCustomerFirst() {
+        return customer.getString("first");
+    }
+
+    @Override
+    public String getCustomerLast() {
+        return  customer.getString("last");
+    }
+
+    @Override
+    public String getCustomerEmail() {
+        return customer.getString("email");
+    }
+
+    @Override
+    public void updateCustomer(String first, String last, String email) {
+        customer.setString("first", first);
+        customer.setString("last", last);
+        customer.setString("email", email);
+        customer.saveRecord();
+    }
 }

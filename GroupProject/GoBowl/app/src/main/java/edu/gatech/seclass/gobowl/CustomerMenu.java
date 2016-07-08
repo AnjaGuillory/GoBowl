@@ -1,5 +1,6 @@
 package edu.gatech.seclass.gobowl;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,5 +42,7 @@ public class CustomerMenu extends AppCompatActivity {
         Intent myIntent = new Intent(this, CheckOut.class);
         this.startActivity(myIntent);
     }
+
+
 
 }
