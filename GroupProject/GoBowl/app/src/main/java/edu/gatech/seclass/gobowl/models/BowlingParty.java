@@ -1,5 +1,7 @@
 package edu.gatech.seclass.gobowl.models;
 
+import android.support.annotation.Nullable;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -45,16 +47,22 @@ public class BowlingParty extends DatabaseEntity {
         b2p.saveRecord();
     }
 
+    @Nullable
     public static BowlingParty getByBowler(Bowler b) {
         String id = b.getString("id");
-        BowlerToParty b2p = BowlerToParty.getByBowler(id);
-        if (b2p == null) {
+        ArrayList<String> ids = BowlerToParty.getPartyIds(id);
+        if (ids == null) {
             return null;
         }
 
-        BowlingParty bp = new BowlingParty();
-        bp.fetchById(b2p.getString("partyid"));
-        return bp;
+        for (String bpid: ids) {
+            BowlingParty bp = new BowlingParty();
+            bp.fetchById(bpid);
+            if (bp.getString("active").equals("1")) {
+                return bp;
+            }
+        }
+        return null;
     }
 
 }

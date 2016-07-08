@@ -5,4 +5,10 @@ package edu.gatech.seclass.gobowl.controller;
  */
 public interface Manager {
     public void addCustomer(String first, String last, String email);
+    public boolean findCustomer(String last, String email);
+    public boolean reprintCard();
+    public String getCustomerFirst();
+    public String getCustomerLast();
+    public String getCustomerEmail();
+    public void updateCustomer(String first, String last, String email);
 }

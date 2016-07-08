@@ -1,7 +1,13 @@
 *.class
+.DS_Store
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+
+GroupProject/GoBowl/app/build/generated
+GroupProject/GoBowl/app/build/intermediates/
+GroupProject/GoBowl/app/build/tmp/
+
 
 # Package Files #
 *.war

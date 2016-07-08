@@ -122,15 +122,25 @@ public class Persistence {
     }
 
     public HashMap<String, String> getRecordById(String table, String id) {
-        String sql = String.format("SELECT * FROM %s WHERE %s='%s'", table, "id", id);
+        String sql = String.format("SELECT * FROM %s WHERE id='%s'", table, id);
         return getRecordbySQL(sql);
     }
+
+    public HashMap<String, String> getRecordById(String table, String id, boolean active) {
+        String sql = String.format("SELECT * FROM %s WHERE id='%s' AND active='%s'", table, id, active ? "1" : "0");
+        return getRecordbySQL(sql);
+    }
+
 
     public HashMap<String, String> getRecordByColumn(String table, String colname, String colval) {
         String sql = String.format("SELECT * FROM %s WHERE %s='%s'", table, colname, colval);
         return getRecordbySQL(sql);
     }
 
+    public HashMap<String, String> getRecordByColumn(String table, String colname, String colval, boolean active) {
+        String sql = String.format("SELECT * FROM %s WHERE %s='%s' AND active='%s'", table, colname, colval, active ? "1" : "0");
+        return getRecordbySQL(sql);
+    }
 
 
     /*
@@ -156,8 +166,55 @@ public class Persistence {
         return ids;
     }
 
+    /*
+        Retrieve all id values for a table...
+    */
+    public ArrayList<String> allPartyIds(String table, String colname, String colval) {
+        Cursor cursor = db.rawQuery(String.format("select partyid from %s where %s='%s'", table, colname, colval), null);
+        // Cursor cursor = db.query(false, table, null, null, null, null, null, null, null);
+        if (cursor.getCount() == 0) {
+            return null;    // Did not find!
+        }
+
+        cursor.moveToFirst();
+
+        ArrayList<String> ids = new ArrayList<>();
+
+        while (!cursor.isAfterLast()) {
+            ids.add(cursor.getString(cursor.getColumnIndex("partyid")));
+            cursor.moveToNext();
+        }
+
+        cursor.close();
+
+        return ids;
+    }
+
+
     public void doInsertorUpdate(String sql) {
         db.execSQL(sql);
+    }
+
+    //  This is to assist in debugging ....
+    private void logSelect(String sql) {
+        Cursor cursor = db.rawQuery(sql, null);
+
+        if (cursor.getCount() == 0) {
+            System.out.println("*** NO DATA RETRIEVED");
+            return;    // Did not find!
+        }
+
+        cursor.moveToFirst();
+
+        while (!cursor.isAfterLast()) {
+            for (String key: cursor.getColumnNames()) {
+                System.out.printf("%s=%s\t", key, cursor.getString(cursor.getColumnIndex(key)));
+            }
+            System.out.println("");
+            cursor.moveToNext();
+        }
+
+        cursor.close();
     }
 
 }

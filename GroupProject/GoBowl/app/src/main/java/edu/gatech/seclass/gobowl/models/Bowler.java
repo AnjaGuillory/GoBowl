@@ -29,4 +29,27 @@ public class Bowler extends DatabaseEntity {
         setup();
         fetchById(hexid);
     }
+
+    public static Bowler findByName(String name) {
+        Bowler b = new Bowler();
+        b.fetchByColumn("last", name);
+
+        if (b.instanceData == null) {
+            return null;
+        }
+
+        return b;
+    }
+
+    public static Bowler findByEmail(String email) {
+        Bowler b = new Bowler();
+        b.fetchByColumn("email", email);
+
+        if (b.instanceData == null) {
+            return null;
+        }
+
+        return b;
+    }
+
 }

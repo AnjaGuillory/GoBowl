@@ -60,7 +60,9 @@
             android:layout_alignLeft="@+id/btnNewCustomer"
             android:layout_alignStart="@+id/btnNewCustomer"
             android:layout_marginTop="10dp"
-            android:textSize="32dp" />
+            android:textSize="32dp"
+            android:nestedScrollingEnabled="false"
+            android:onClick="buttonReprintCard" />
 
         <Button
             android:layout_width="fill_parent"
@@ -70,7 +72,8 @@
             android:layout_marginTop="10dp"
             android:layout_below="@+id/button2"
             android:layout_centerHorizontal="true"
-            android:textSize="32dp" />
+            android:textSize="32dp"
+            android:onClick="buttonEditCustomer" />
     </LinearLayout>
 
 </RelativeLayout>

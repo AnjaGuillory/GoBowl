@@ -48,6 +48,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:onClick="buttonNextCard"
-            android:nestedScrollingEnabled="false" />
+            android:nestedScrollingEnabled="false"
+            android:textSize="32dp" />
     </LinearLayout>
 </RelativeLayout>
