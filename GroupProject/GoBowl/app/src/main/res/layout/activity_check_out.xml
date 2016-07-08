@@ -111,7 +111,8 @@
             android:text="Pay Now!"
             android:id="@+id/btnPay"
             android:layout_marginTop="10dp"
-            android:onClick="buttonStartPaying" />
+            android:onClick="buttonStartPaying"
+            android:textSize="24dp" />
 
     </LinearLayout>
 </RelativeLayout>

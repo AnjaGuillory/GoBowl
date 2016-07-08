@@ -27,4 +27,10 @@ public class BowlerToParty extends DatabaseEntity {
         }
         return b2p;
     }
+
+    public static ArrayList<String> getPartyIds(String bolwerId) {
+        ArrayList<String> ids = new ArrayList<>();
+        ids = Persistence.getInstance().allPartyIds("bowlertoparty", "bowlerid", bolwerId);
+        return ids;
+    }
 }

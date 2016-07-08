@@ -115,7 +115,7 @@ public class BowlingSystem implements Customer, Manager {
     @Override
     public boolean checkOut() {
         activeBowlingParty = BowlingParty.getByBowler(leadBowler);
-        if (activeBowlingParty == null) {
+        if (activeBowlingParty == null ) {
             return false;
         }
 
@@ -166,6 +166,8 @@ public class BowlingSystem implements Customer, Manager {
         if (PaymentService.processPayment(fields[0], fields[1], fields[2], expiry, fields[4], individualfee)) {
             numCreditCards--;
             if (numCreditCards == 0) {
+                activeBowlingParty.setString("active", "0");
+                activeBowlingParty.saveRecord();
                 return 1;
             }
             return 0;

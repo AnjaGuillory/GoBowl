@@ -27,7 +27,7 @@ public class ScanCreditCard extends AppCompatActivity {
                 cd.dialog("Error", "The card was not read.  Please swipe again", null);
                 break;
             case -2:
-                cd.dialog("Error", "The card was not accepted.  Please try anogther", null);
+                cd.dialog("Error", "The card was not accepted.  Please try a different card", null);
                 break;
             case 0:
                 cd.dialog("Payment Accepted", "Thank you. Please retrieve the next card to pay with.", null);

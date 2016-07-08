@@ -33,11 +33,24 @@ abstract class DatabaseEntity {
     //  Create this instance by selecting by id
     protected void fetchById(String id) {
         instanceData = Persistence.getInstance().getRecordById(tableName, id);
+        newRecord = false;
     }
+
+    protected void fetchById(String id, boolean active) {
+        instanceData = Persistence.getInstance().getRecordById(tableName, id, active);
+        newRecord = false;
+    }
+
 
     //  Create this instance by selecting by id
     protected void fetchByColumn(String colname, String colval) {
         instanceData = Persistence.getInstance().getRecordByColumn(tableName, colname, colval);
+        newRecord = false;
+    }
+
+    protected void fetchByColumn(String colname, String colval, boolean active) {
+        instanceData = Persistence.getInstance().getRecordByColumn(tableName, colname, colval, active);
+        newRecord = false;
     }
 
 
