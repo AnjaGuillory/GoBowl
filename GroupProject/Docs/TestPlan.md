@@ -5,13 +5,14 @@
 | Version | Description     |
 | --------|:---------------:|
 | V1      | Initial version |
+| V2      | Added system test cases |
 
 ## 1 Testing Strategy
 
 ### 1.1 Overall strategy
 
 
-The Go Bowl application will initially be developed with system and unit testing.  Integration testing and regression testing will possibly be added in a future deliverable.  Deliverable 2 will define a sample of initial system tests attempting to cover most use cases.  Initial unit test will be pursued in deliverable 3.
+The Go Bowl application will initially be developed with system and unit testing.  Integration testing and regression testing will possibly be added in a future deliverable. 
 
 
 ### 1.2 Test Selection
@@ -21,7 +22,7 @@ Initally the functional (black box) testing will be performed with unit testing 
 
 ### 1.3 Adequacy Criterion
 
-Test coverage will be used to examine the quality of tests in future iterations.
+System tests will be performed manually using an android device.  Test coverage will be used to examine the quality of any unit tests.
 
 
 ### 1.4 Bug Tracking
@@ -34,7 +35,7 @@ Android, JUnit tests, automated integration tests if time permits.
 
 ## 2 Test Cases
 
-| Add Customer | Basic use case |
+| Add Customer | Ideal use case |
 | --------|:---------------:|
 | Purpose | Test the functionality of adding a new Customer to the system. |
 | Steps | Tap "Manager" button.  Tap "New Customer" button.  Fill in first name, last name, and email address.  Tap "Create Bowler!".
@@ -51,7 +52,7 @@ Android, JUnit tests, automated integration tests if time permits.
 | Pass/fail Info | Test passes if failure confirmation dialog is shown and returns to data-entry form |
 | ** This test is not currently passing ** |
 
-| Edit Customer |  |
+| Edit Customer | Ideal Use Case |
 | --------|:---------------:|
 | Purpose | Test editing of customer |
 | Steps | Tap "Manager" button.  Tap "Edit Customer" button.  Tap "Scan Card Now".  The customer's information is displayed in editable text fields.  Make edits to information.  Tap "Save Bowler!" button. |
@@ -59,6 +60,22 @@ Android, JUnit tests, automated integration tests if time permits.
 | Actual Result | Edit functionality is currently not implemented |
 | Pass/fail Info | Test passes if success dialog is shown and returns to Manager menu |
 | ** This test is not currently passing ** |
+
+| Print Customer Card | Ideal Use Case |
+| --------|:---------------:|
+| Purpose | Basic test of Reprinting of Customer id card |
+| Steps | Tap "Manager" button.  Tap "Reprint Card" button.  Enter in email address or last name to search by.  Tap "search" button.  Print success displayed and returns to main menu.    |
+| Expected Result | System displays print success dialog confirming customer found and printed. |
+| Actual Result | System display print success dialog for customer. |
+| Pass/fail Info | Test passes if success dialog is shown and returns to Manager menu |
+
+| Print Customer Card | Customer Not Found |
+| --------|:---------------:|
+| Purpose | test of Reprinting of Customer id card and customer info not found |
+| Steps | Tap "Manager" button.  Tap "Reprint Card" button.  Enter in email address or last name to search by.  Tap "search" button.  "Not Found" dialog box is displayed.  Tap "Back" button to return to manager menu.  |
+| Expected Result | System displays "Not Found" dialog. |
+| Actual Result | System display "Not Found" dialog for customer. |
+| Pass/fail Info | Test passes if success dialog is shown |
 
 
 
