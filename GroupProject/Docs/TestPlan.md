@@ -43,7 +43,7 @@ Android, JUnit tests, automated integration tests if time permits.
 | Actual Result | Dialog is displayed showing first name |
 | Pass/fail Info | Test passes if confirmation dialog is shown |
 
-| Add Customer | Do not fill in all of information |
+| Add Customer | Manager does not fill in all information |
 | --------|:---------------:|
 | Purpose | Add new customer but don't supply all of the necessary information |
 | Steps | Tap "Manager" button.  Tap "New Customer" button.  Fill in first name but ommit last name and email address.  Tap "Create Bowler!".
@@ -78,5 +78,50 @@ Android, JUnit tests, automated integration tests if time permits.
 | Pass/fail Info | Test passes if success dialog is shown |
 
 
+| Request Lane | Ideal Use Case |
+| --------|:---------------:|
+| Purpose | test of signing up for a lane with 2 bowlers. |
+| Steps | Tap "Customer" button.  Tap "Scan Card Now" button to login.  Tap "Go Bowling!" button.  Enter "2" for number of bowlers.  Tap "Let's get started!" button.  Tap "Scan Card Now" button for 2nd bowler (1st bowler scanned card initially).  Scan is successful, lane is assigned.  Tap "Done" button to exit system and go bowling.  |
+| Expected Result | System displays "lane information" dialog. |
+| Actual Result | System displays "lane information" dialog for customer. |
+| Pass/fail Info | Test passes if "lane info" dialog is shown |
+
+
+| Request Lane | No lanes available |
+| --------|:---------------:|
+| Purpose | test of signing up for a lane but none are available. |
+| Steps | Tap "Customer" button.  Tap "Scan Card Now" button to login.  Tap "Go Bowling!" button.  System displays dialog informing no lanes available.  Return to main menu  |
+| Expected Result | System displays "no lanes available" dialog. |
+| Actual Result | System displays "no lanes available" dialog for customer. |
+| Pass/fail Info | Test passes if "no lanes available" dialog is shown |
+| Notes | This test may not be necessary for this test system if we assume unlimited number of lanes |
+
+
+| Checkout | Ideal Use Case |
+| --------|:---------------:|
+| Purpose | test of checking out (paying) after bowling |
+| Steps | Customer was prevously assigned a lane.  Tap "Customer" button.  Tap "Scan Card Now" button to login.  Tap "Finish Bowling" button.  Enter 2 for the # of credit cards to split payment.  Tap "Pay Now!" button.  Tap "Ready" button to scan 1st credit card.  Confirmation dialog box is displayed.  Tap "ok" to confirm. Tap "Ready" button to scan 2nd credit card.  Tap "ok" to confirm payment and return to main menu.  |
+| Expected Result | System displays final payment confirmation dialog. |
+| Actual Result | System displays final payment confirmation" dialog for customer. |
+| Pass/fail Info | Test passes if 2 payment confirmation dialogs are shown |
+
+
+| Checkout | Not currently assigned a lane |
+| --------|:---------------:|
+| Purpose | Verify that the Checkout system only works for customers who have previously been assigned a lane. |
+| Steps | Customer was not previously assigned a lane.  Tap "Customer" button.  Tap "Scan Card Now" button to login.  Tap "Finish Bowling" button. The system displays an error message to uses.  Tap "ok" button to exit back to customer menu.|
+| Expected Result | System displays error "Not bowling" dialog. |
+| Actual Result | System displays error "Not bowling" dialog. |
+| Pass/fail Info | Test passes if error "Not bowling" dialog is shown. |
+
+
+| Checkout | Invalid # of credit cards (0) |
+| --------|:---------------:|
+| Purpose | Verify that invalid input for the # of credit cards is caught. |
+| Steps | Customer was prevously assigned a lane.  Tap "Customer" button.  Tap "Scan Card Now" button to login.  Tap "Finish Bowling" button.  Enter 0 for the # of credit cards to split payment.  Tap "Pay Now!" button.  System displays error "invalid input" dialog.  Tap "ok" button.  |
+| Expected Result | System displays "invalid input" dialog. |
+| Actual Result | System goes into infinite loop prompting for credit cards. |
+| Pass/fail Info | Test passes if system displays "invalid input" dialog. |
+| ** This test is not currently passing ** |
 
 
