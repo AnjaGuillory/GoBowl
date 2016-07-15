@@ -2,116 +2,116 @@
 
 ##Customer Section##
 
+###1. Customer Login and Lane Request###
 
-###Customer Login and Lane Request###
+####1.1 Press Customer####
+--------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/ClickCustomer.PNG?token=AAAhbpsNmtOm4kKnGnUiaBvwkK8DXpA1ks5Xia2mwA%3D%3D)
 
-### 1. Click Customer
+<p>To login, press "Customer".</p>
+####1.2 Bowl####
+--------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/GoBowling.PNG?token=AAAhbqDvAu76F-5AR5GVTeNguOXYhtnwks5Xia3EwA%3D%3D)
+<p>Press "Go Bowling!" to start</p>
 
-![](https://lh3.googleusercontent.com/_rqGjHO12DxJEr9abZ-iO9ArV7G5VL9hof76kOY46OcM4oGFpyfvahIt8rkmkornWG9VoQJLvA7h2bG5fm2ZLY9WZqtr_fYLikxozWazbLgaETig5MzHMq96cbpb8stPv5Kt7Y9qy2EZEWSqUdZrA4AxOFFXD3WnKXtNAHXauulqW1-phFk25EPQhl_L6uuGhVR4DrX3bt0mltlTlaPp9kKCpWUqNHh79X_kS4vdxn2X2Oi6s7KG-oQ94LmK_qQOqYHwb3ncuj9T5mix1tQXwnu2oocvgnz-14FfBR9sRif6Meel8fN8TBAoQzdzUGs_bNJVNVoOcRH94FA5bz9YaqufDFOnSYZUGcDSxo98dc9foKLOeH8lrcrSr4bgsUQgVve9BU9-FhFC48SDul-yLEgpjzTanFxJSsIPN5kMPpUdLR3pFJeuZRB--Wp0TD5BjCafahkF2TSVM8bcYCYyB5hj7lp7KGs2TV1JDX8gdPvTqAfykM6oX5JxdXMC4u2uK8CvJDMGe95pVoPzkis8PzV6Vtpq3XHm5TNh7Dr19SFj5q84h7S54x13fTFCseIzNeXgK0yCczKjI6_524si9FgnC9o1TyoB=w279-h580-no)
+####1.3 Scan Card####
+--------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/ScanCardNow.PNG?token=AAAhbm5ul09X3fNZWCZJG3ZHO1fXngAAks5Xia3dwA%3D%3D)
+<p>Press "Scan Card Now!" and begin to scan your customer card using the video camera</p>
 
-To login, click Customer.
 
-### 2. Bowl  
+###2 Request Lane###
 
-![](https://lh3.googleusercontent.com/PZCtqnU-g8sQ9jOI7ud0t5QunAILnazNLmltiaqLfrOZiDUtRHwa6NywQPNjGDmL5gk5eVpPu3fSVMCRhfnAIRN_Vf6m82vhsNtydW2xDJiMFPBBfKSVkoXVB8j08GEGVZwCandHWir4Rr3LgTBm29NRe10get64hqwuuVr10YQlodKUNsAi14Q9OAf2z6IZVusgIUhM_vAxB_xiXDBWjZzZPLcfT4G2utja4-E45vWxW3dkIsCmPNs55ACjy_uNRhOOthwzmLk8wYlTH32TmuE_6VOTmSMuuwLZbb0rJdjGFwkovTYa9DW6On6pQRlsr28UuPJXIII1EURcel8hMdi3Knw16S_hk5xJSkXy3ZQwu2IzeaENaku5ZHsZq4JYqhdA7UKwoRPByhkvlNJ3w8LKGtMnvArvAwNTs5GeR3uLR0Eh8B_gY70AcvovMcdJgIBU4Axh5jKIDwGUdSraUQpbre2aLRY9DWdEgeCIIwiqhJcUJYgfF-isVBo63wMEoSNsOgQecjUGDjpXdCrZATNdPYd7oGqbdqIN9tja3RQaXu4f62b4KUdXhJv4ylJMmuY7UrAKt8eZU3rkVYnCl-ZhCkJcMrH3=w280-h576-no)
+####2.1 Request Lane####
+--------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/RequestALane.PNG?token=AAAhbv9RSFSrog8npFipl-Kv4Ft1gxXjks5Xia4BwA%3D%3D)
 
-Click Go Bowling! to start
-
-### 3. Scan Card
-![](https://lh3.googleusercontent.com/YUCt6FtzmlqnAW3hNRT1pLJpNBdLsOFcD2tD6UFlJSWws-lnpKBntPvGiggixWNqx1TOCeIj25-MnW_pbvNpQHNISh-P3nBy_1uCm5rSCl38_BD9Tmue3Te_Ki8EB00dkDfZRqXSsesxIKbbVXushsfTNEpRWbGB66LNfiOM7wz3KmovzcZibJzXcPryboDT_HZU45JJkIRk9dkXR8NDnkdZwQgU_uecyYUJof6UuOsV6ROYQfNjt5BBxNOksioXgKup0Uajj3GKtTLCKS4EJNq9wnmhXjjU0mcBB9RsBYmZ-vBO_DKz61_hq4giSxbb132uKcIDV4EBiuMMWP77JARe-_ezUCrb30J9zhuOfvLMmLLQT3xo5vvSMvGOo_uFPhysKwVyOVzDd6jpNj9hZhjokGjZxZ2lJMZy10TbSH0RjHVt_gHao8DPp8gF0Rkx5_LUzc43OZ1BvqI4U3rwTYYc8vpAR_F0Rhrq4HJcAwdptadDtryFUht0sb5f_71FE8x4a_WsvVylLSt7OsPq2YYoXB0fGZHGwFiWsB52_AMMUOHzKLeuTl1ejtphG55nEkUH6uvJinQW4fc-_P1yBs53yCHxPhcS=w282-h576-no)
-<p>Click Scan Card Now! and begin to scan your customer card using the video camera</p>
-</ol>
-
-###Request Lane###
-<ol>
-<li>Request Lane</li>
-![](https://lh3.googleusercontent.com/GWK97kqEdEIBrnRDJaoE0DOUyQq-Agy_aGKVBDD7BaCVHoIBzdnz6amj3Y7vk-FrnyQNGEQCIb6iQWxKBDYhrlCuT9VIQyPHYtA8Frl8MGnNgl61KovVnD_HHE6_qiF2cj5MZOvjotHy58tj94YmW3Qm1Irg8Q1qGmVUawjVX3bhUoQsbrmXFzNN9N2PSUrxMmUpzakqZLg6Q1u0yPZV0f0L-Zd9KqCWOixilFW8tpn9j-0Kiodg29Dpp8Z5lA8UKd7yz9N7tKaLRlhPL2CVrxImE6SlMgsSrPEZfd8vMblX_f74A0mgir7VQ8vKewdKRDBf0r1KUjRX9jSiGF8r6A6y_G122lbT3DlCz00uC3IZ_Q59MkPFW29GNSuwOm1CxeSF7gdXwIagwF_3gC7gInEx-YN72KLyjpsVAD4PY8nXf0YwtMk1COfJUfuFWPBQ98I9H1LsdXyVMkjLgZOR20ZjVRv37kHjAreozMlZ1U4acsJdVcOF6stEfGs5R5zhoNolMslSAujaO8s6XHcsMRYI0QjSrBsdgPrQOqaxABr-Tu8NJ6qLYfnVLV91I85nTU03dZZ9r9D__7qpdoYC_pE9eAlUeQx4=w285-h572-no)
 <p>Next to "How Many Bowlers?", enter the number of bowlers in your group. Then press "Let's get started!"</p>
-<li>Enter number of players</li>
-![](https://lh3.googleusercontent.com/x2jMcthoxujfthwcosBcCaQvehEdoRRmPmp_XEWmn6NYao_CbKGVBK69YKTrKwowXvQnuiah2TPhM-bDw6Zw0LxOqH5CeCxFEYzWnZpsrEK6uc_gIRfdzQpXMIID19jDQbVfo9nhCDt_LKqs_8hsAZPXwSMdnheHVcp0eqwRZlQT7HI8WRkWSkY1Rpe7TRQtAwY3CLrWv7D3FBvFOV4DBuIX87uxfeWeFaxnLEECxzcrOPBbPMQgNilTrm1iV0d7EMw5v5NZ-qnh-qjPO5SxJVJyUrKt21VJeVR2njWm0ZJGJRM8WYkeLdUyLi5X-4OtXcdHOI9BHOTWhE7eU6k68k04dAImOLfg3ou_nqaT8goLv8yDBr6rBbQMVIEEDi2KshnZ5xlx9pZ-FOnK55sqSljPMhNatCSxwBsROwKLMoHowewfsj9oOh93f3gJIpGu11ZibHQgmxCjIn9KgOwMVda2OGr22DaNgZikw4arbxTgP9Fal--YidyAqtageaoSch5ukyiSHebr4qBITM5bfIPoRS9v4XH1TtEwkeUrlFh4iVwFGcSPHve62x3dWOw__qN0e5klwXz0A4Pi2ZOxHWbjMBAkhAsX=w280-h573-no)
+
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/LanneAssignment.PNG?token=AAAhbqJ9BoavUmEL-JlHeu6qkUe5A0NFks5Xia4UwA%3D%3D)
 <p>Once processed, your lane designated lane will display on this screen</p>
-</ol>
 
-###Check Out###
-<ol>
-<li>Log in</li>
-<ul><li>Refer to "To log in, click Customer" section.</li></ul>
-<p>hello</p>
-<li>Finish bowling</li>
+###3 Check Out###
 
-![](https://lh3.googleusercontent.com/CTqTts0FORijIc0IQp8VzpZYI6uY3YVYvzDw1L_fZoBtFKmbvIzw99eR62R3pi1pP4GKHT0VMhPLjEuzIJwP9NIgUGR0ndc9yFwZQ2R_xPYaAWolkkPdXQHEK5wH8Ceu8ajStBDGIvYSfcvX0uVzSs6HO2XNwDx39Zbx5t4d_w36_6LBQQxfn-pVylEWCYYYzDn9CnYxAbh_rKUUsem5PVzfuJlVhuxbm0xmHr0cnWWw1GL2kFIPu-oRv_if7iqXZ9HszhlPPyNXIC5uthnOr6fNGwO121zLyDMR3rguNKXw7XMDgeJQCCcGcrOFfw78c12Xg0_DjWGGMoYJsk_ocp0Gy8dbRk2w7OTHaxMQs566dDrEBVPAfGU5r3K9EbxZtqDuSJo8kUu-Ffcq7cWCFrzycCAUQcNeAlTAkTUwFJE51ftcIAjD3WqxjCJVfaAkalyCvPWr1izrE8NqnIOtqxie7XgqINmts5DXog-y_DXuLq865kI3cwEhx_Jx5xPbw6hlPGFJBjgkSQvvkgp39SNzWEUgWs7aChCp9KAFEhRKPdnyCY-YcnTtg3HTLdVeT7XSXkMxBwf43X7aJ4z7EOY7z2Hz8-vt=w285-h578-no)
-
-<p>Click "Finish bowling"</p>
-<li>Enter Number of Credit Cards</li>
-![](https://lh3.googleusercontent.com/-LQRVakEunXI0VJZgOSiTDeKYSWW33M42uCckQnLOZjX2dkEjgjI3Wc6Mpo7Fk7uBcO294bHILi5QNxynLkvjoB8943QEfIB1hoWyA59FB0WR3lwjhmZW_ZKqtux342mZ7BRVQ0F9Sa9wqA38SAx1cB25DSUIBqFeOAuDvPOsIRUIb_3rmjr0Bsc0hEWCYPgmnWqM43WnDahydDCgOEtbf6qJd1xmmFlg-IW5hxjvt5ERsZKoOQ4pS1ksBACmISUKPg-9b5-vdLIy-_YLTl6hNn9N_hEVK5bwCsOxiZfFHKs4o82-3ZGRClgtk0HsKDhxsD5N447JkdSoyyyWuBNUqTS1GJ7GmoUV-UT20lSTvc3QIxREvXFkdbk4MuOBH57wWtSU6hATTXTy7Hx9HQlTa5xWQHc4woFC6td2amApBmxS3UlGVAd4W0De6qLIyqfT6cHuwFw-SlVWMzytCdpV6R8-AUPxLkAqkx_byD3JCLP93kH2D6jXxu2qjFTm8srPoRHvd_fO52BhTRPUD9d_J6c42ZNszqzW7uoakBKoa2zHyNGBrJVntpTaIQAg9XIIebWoki1urTpeN25mRstV3UyuFm4xHfL=w279-h575-no)
-<p>Next to "# Cards?", enter the number of credit cards that will be used to complete the payment. Then click "Pay now!"</p>
-<li>Pay</li>
-![](https://lh3.googleusercontent.com/EpMbwYbElT38caVokhsnv0Mm7ml4e8m1X51Lyl5b_nNTlFk9StxUFTYwkf6h8kK1lZOjz8AD-iHPzMOkqfzzhUge2oWE-tISC_w8eR-YGNmFbQn4xTEzVFByFFWMklkyYWtapnxnixnoA_xxIkENxYBYnjcsMiLQCc_IsqFXV3qDgn1dm-4vwkQj5blPIZHyIkOo2sZi2_bLG1v04-qY3MmAwLoVBs_5T9nAfDP4wN5WN431ZihKdvDad3HQX4x8v-FFH06U0a2fEsscmLa8aWFCWuEF7-HC2Of2Dg9N8cpLRGu8rqoghY3IbLP6qMXk6rLEzaAuSQ0wXqnu3py9n04C8iAngrRzos_SdrdV7H2cmo1J8DyNwQIdwF9p7FmbDNTLzpQk5mVqakZQSWnXhP5rCHeN8xsQFTNGx6apL3ofqJDJYoYOP_4LM4Iy1-942QNKpbFBSXK07CKX6RdicejXKnKSYVdJXfXZ27eDlhiSR8xMud6hZJSYD913xZqnNph7FCav0vkGRY-m-j-24RvyzyNSgmTWjIF3mNW0W0U6z4_pMZhcrAauuw-hWCgCg5UnKeW4T1RBb_kOnplSuiFAowiCO3el=w281-h575-no)
-<p>For each credit card usage, click "Ready" and then scan a credit card</p>
-![](https://lh3.googleusercontent.com/xvlSWynG2Oh9cFNof7msTtdXTFLtQtcMGY5H2vghM2bbF9iqQuNrvlDsDB6BDZ_ShYMsLnetuOyWmTCIfVN5aseMjpEC6s0a8UZk_xRI_OEE8or-E2FNYY2y4HOSJklufGuiCvEUBoZx0k1LQ3ER078ytP2A2k2HRBmUPyToE4Ya4-9gn8LuU93jBrb8z1uiaLNOxD-kKNN8SZTOpXdfraDFl_BToaD4NZmPoWH6N_riRTIiGt6WPPfFM35Lx4Fq7knibw-kQz3W0GSQSP1JQyiG8yl2wug42Kzq2x2bSeUjiOKLTy2_tcCoY576HN6spy_rF-Z0aN4bwi4wHhOK2tFdnajCCMJsoOgH15p9hgNO_CnlnJS3eqHEtCy-b3w0aRkoj3gAhNeP_cb7PuXucB_hYNAeKdf64JF7_fAnIRW7yugNzG9H1qvlDXJM3ZqoLZkhCWgol4LFdmrsvN-MxnjeVyPGRoXotp5Iq0HHMIcMEMwEAycAK9Wu0TUMGN9tG_SJMMSewh3qxtPM5W0k-3ET1e2HzwZ42BmqU9jgyu4DiAkgvWZytTlOgo6DqZ4c3IgVv7HaqmRtxvMVsHelb9gl4v7RhOrZ=w227-h105-no)
+####3.1 Log in####
+--------------------------
+Refer to 1.1
+####3.2 Finish bowling####
+--------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/FinishBowling.PNG?token=AAAhbuti_17kGEmoNyFVqNEPmN-HGUzMks5Xia4pwA%3D%3D)
+<p>Press "Finish bowling"</p>
+####3.3 Enter Number of Credit Cards####
+--------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/Payment.PNG?token=AAAhbsT351JWJIflc_TXj_255uPBBPkXks5Xia5PwA%3D%3D)
+<p>Next to "# Cards?", enter the number of credit cards that will be used to complete the payment. Then press "Pay now!"</p>
+####3.4 Pay####
+--------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/CreditCardScan.PNG?token=AAAhbuzarGk1WOyAHA2wDSNEUNVkOiRYks5Xia5ewA%3D%3D)
+<p>For each credit card usage, press "Ready" and then scan a credit card</p>
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/CreditCardNotAccepted.PNG?token=AAAhbt90_pe_bj-F2QTkDsI5vS2prZA1ks5Xia5uwA%3D%3D)
 <p>If the card was not accepted, you will get this message</p>
-<li>Payment Complete Notification</li>
-![](https://lh3.googleusercontent.com/_b7XTOJQ5S_Ydh7m9xjDui5lNMBEzebkrDPjmDHwirfuCjebdGcH3csYgpAVDC0UGzfmpQaLULkPjMXcHT55h_lWjJWL3mPJHVsbyD55J2Cp-Y4j10JUvGannGE-4Apkxmmyu8OPcDCxW_5Bm8-MiZVU_6oTxeSn3XNRbksN3qsfNpkCIxbkmWo2L9fOsqU8SAtpG1nBX9nd8tnxOy1m8p2bxXfBjUkkIa-BLgD7pMqGlmQq21woCFI-UH5wKulD7zWm1W3DcSr7Yhb1dkKeoPegaTWtWVPNXjZi2MsQe80fMS4h-96CuKCdnoLKHzQ7bMQ9981dr4J5S2W4mwZJoM90ArRGX18GUnUHFTphCwpsZw3YuXS6YXjRQNCjA0Olr94hmFmBrhq05VT1K47mnKEuTkD4C0s-o9eayu345G8mLxpxjyv609IsR8cY-FkOr6K5FkaOMhAf4YNGjjBv2LWauMTj_GxXOrA7t_f01QZUjyK2leS4TfUi-ALtipa1b2Ov5o3WenGCbDt8AIBZL1L1dGUDOpVBYYPaoICjPqhJLjG0PRU1WoWsm1sQZEuHnIg9ydIK0BhEVQZ2GzhsbVSdIFPX_GuA=w225-h96-no)
+####Payment Complete Notification####
+-------------------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Customer%20Pics/PaymentAccepted.PNG?token=AAAhbmOFK_oeTCRlMtwCEAnze_BZGgbIks5Xia6CwA%3D%3D)
 <p>If the payment is successful, you will get this message</p>
 
-![](https://lh3.googleusercontent.com/UVfGu3HhL5lsutCzlmxlD_DuGFW4yc23phaigF-B6IIrxbp_GpS-WaXVWzKx26FniHemflbr5_aeChgYGl8uGg_7UKxBo-TE-mEBcrWiO8gXSfbty-VhnSS0liKYtfgn6JYqhI6OXMX5KjiUz8tMuhv4MKE8cjNZHPW53wXNvpDUTNIXmh5ebiROXrTf03xUvjstj53XRmtcXHLORN_tqeRc7ocsX277ScPChdDRLv927BndOS4MSHDJ4xlNAYHJK4sj2lNcKGKgZu9JoWSuC9YvTzjRRq_R5Dw27KEo6IqwwnreJSXAwK8jSA1lcpR_hJaTpY_wisjIOWuO_ZMF3YknYlgvOVEgIpz_l4zh3j9B-IolpaVoAtkfo8dtsJ2JpFFd032eLVcgIWYUb0Hy9h5gdgov8rSebARP9zq14NrFaANK42eF10CiKFlCMkfJc_PHBj2aRflTG3BvMN_xZqN_WobaWz6uqG74s5ikTLIjUq13VHYhsxj77PqMdMtR22LY1pflWjoH3Ocq7JNPLgW46amDBCpulviaTiTOJn_yhDIWS3uZ0LlQX51FQPHuBH-jBa2N5Es00RgWglJeZWQpz9LDPTXB=w228-h96-no)
 
-<p>If the payment is unsuccessful, you will get this message</p>
-</ol>
 
 ##Manager Section##
 
-###Manager Login###
-<ol>
-<li>Click Manager</li>
-![](https://lh3.googleusercontent.com/38SblnBiDT6UeUSH7gdEtZXqUFvDp41ZGZiVfCmCD8hKSKFZMuUIixPaSKgCDgJuEzo1hQmbhK-C0s1Nf6EXqELlKTmRv23YkBZteYDy04y4B1UAvz9OhaqPMrVdKH29uYFFAAOszqrWlhjNhQIB3RCjBtpt92uCsh__GA6osHIx3CWWdGQ9TXKuH2sAma0Y_T6DTnahVQynT779xATwm5w829602gz2LPcAUe0cnA8JPXutsU-upTXrMNaNWp44FEH25-835fRfUxdEDdATFvNvBec66V6whcMt2oDp0khaMMO5eWYLEUrqaw8SbxCXBxyxnAmueXRxMIDEFWcKdLMXqoyZ6SShRo31Cm9uqdgrel2hUSIRmEVJhzY9e1i-AkAaFcHgDKtbRT0w9lxtIMsz7QSTYDLQjB2G17IrhKXVkn5XKMk5egldXIqQg8BwUgdYYvJ81g_FLuISakH8H3NEjIPBDi8i8dB-rk4_BIRLJUsNJxZNmQGSmamAXXnkvNZoUMGwJhair92skdUo8u9nMzL5easwSdJO-AedJCSUYcaztkO4rVvj8rtBjLHJLHMCGICuuXilrQ5dG7d1EPuvWtmsXi2X=w280-h574-no)
-<p>To login as a manager, click "Manager"</p>
+###1 Manager Login###
 
-###Add Customer###
-<ol>
-<li>Click New Customer</li>
-![](https://lh3.googleusercontent.com/Un-DLkAheISoVfu0cSPVjzs0OsmsJLM2Vj8J1vvQ5lOV4uS1L0MpcOalbN6-5Uak86y6WeRo8u4qY2tndpRYDOMfLNZuleNpK5L7FZSJHVFudxoQyB_YauzymW0K9AfvfK1MpBw66UoF8CWsO_-IXce-lib26j6qJmgI_YrbLRCEPtNK520743ocoAy4AF7zNH3TfNZ4QNRGJfBWrPG7Vu2pxYJDooIG2YEDk99AoDj8paDLSxKwef5IHCi2GdRCr4d2LQN1qOQq5YaTu-AHG3WLLGhbsyK5XmGxFxUmbCGefbjaSPgkErx-suSQaXiRgCMkFJdy1l9C7bmr0UhyvG1DHDYPWOdN6oQdaIIKc-P8wu5DUDB_yFRC2iWQtZg1Fs9efPjXStOUc7qHTVPQp09aFF-9eS170g3UCBDty7DhETC73aLVUjSzbtKNkJsqHLKCk86_J13nUdB5t6e9koeUItvAjAIWnfLkv48iw4QZvHYFewjl-0rpJ6KLDzEy8QXTLV-ayfzHQyAC_cKlItkMRs04ztawAoJwl7Bptewdj-u47VOVRIXy9vdpRnfFVFcXbOfmOSWWUrQlSFtBa7YrRixg8wQj=w281-h577-no)
-<p></p>
-<li>Create New Bowler</li>
-![](https://lh3.googleusercontent.com/h-Xhhm6glKP1e-wVRGbRxdVaIpf4HQOshQaZz1phAOCzFR3UjaO4o29aDVJ6S8j20XccWmzxfCu1yZ-KzgxH1QcDpkR4Eq5hCmApWBvG8gC1hwS_0AKt8ugU8fGo9DrtxVV4m9TPo2LFO7SDhGf4n8jDSFa1Q99RWhyOoB9yZlOUMq3fodtIXVITB0Io0a4kH75P_pwUNKFP_qSFhwVCSiddy_2MFGalGkZR-kusQdGPeJ3JjIc59nB52tTkAIP60ZxFzxs8H89F6aWd4vx5Vbar2ifG0Pc0x3VZJ5u4u_rzdlYvkmJ6b-uW61rqRbpUH6-Sio2Rm-t38Udz17SE6JzPg0OYL4uBtYgvCY77BR94jAZW__xkPZ57WExT_NdlKhMJuuKPTJ_DcJng5G3CGM-B38tGRAiugX85a5Ng0-SBpHY2Twk3JASzUJMoYz0yJ3fYKIBDm101dy62CQ1VAtcOsXPEKgV8ZVU2UcY1ngr85aGWUdo4GvpsYVzOqxKXb3RpBz-da2RNKvFcXYNcPxQU25XOGzNrYAJtftsb_pnlsGZNB9djsEDnzaZaRBbiSy8NaVStbseWWYf_oV_y0wPFaKGZhtVj=w283-h575-no)
-<p>Next to "First Name:", enter the new customer's first name, followed by his or her surname next to "Last Name:". Then enter the customer's email address next to "Email:" and click "Create Bowler!" when finished</p>
-![](https://lh3.googleusercontent.com/myu2jwaWr8ii1OfL71pX-Is4oaYXB26COkmAZB8F_G8d9L_Z1jwA0lsCXfmVp3geympp-RWzx1FPA60RxunZulywHEak3YmigoQsRupZNLgpx-xe_klHsGFfcasBKdh2qSnVevq1_97w6pkP_5N5IVWj0e1jY39sdvZtrp5WyOoTfhSEI_jyxga5z2ucMc2DMtumSbG9pBtc-1YrDaJhctKGXFdTfHFYefAJPYFoEWqlpX3TxfCCWc3CB9VDgkf2G3nyYerPvvp2aKZ-Q_TNJkvwNtZsZohvxTdnR2GAnpb2X7uyxD4Ch0EzGzF_l0eUlYT4vxfKpKqxLc2GkiwYyT-nr5iuVVphFFy4LKZlv7TT8w6xCCYVnIKwws8UuWRHtRysDIm7jLzG9IKxibatP7ADBaelDG8KAw1P_-M-kxrK8bVOoDucQ2S53v9NhbteUqJQflI5rOyhqeq0YyZuX8K0x8TcEnNc9iurXgikh1p74ILIYw0DSmtuQzv_jFovQxEywM5hsUBM0BHPffSF-QpvknmPSADSo7qKNQgNQ9c30M9qppQVtHh6wnc9SSYVwo4ev8HxZYKTBJo9n52GwYz3SaaX4jd_=w224-h97-no)
+####1.1 Press Manager####
+--------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/ClickManager.PNG?token=AAAhbhQSpoinq5WAqH5xNlmYhCf2vETAks5Xia6jwA%3D%3D)
+<p>To login as a manager, press "Manager"</p>
+
+###2 Add Customer###
+
+####2.1 Press New Customer###
+-----------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/NewCustomer/ClickNewCustomer.PNG?token=AAAhbv-d7ca5BvtbJhx-kQwuAKcjOdWeks5Xia6-wA%3D%3D)
+<p>press "New Customer"</p>
+
+####2.2 Create New Bowler####
+-----------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/NewCustomer/ClickNewCustomer.PNG?token=AAAhbv-d7ca5BvtbJhx-kQwuAKcjOdWeks5Xia6-wA%3D%3D)
+<p>Next to "First Name:", enter the new customer's first name, followed by his or her surname next to "Last Name:". Then enter the customer's email address next to "Email:" and press "Create Bowler!" when finished</p>
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/NewCustomer/CustomerCreated!.PNG?token=AAAhbpSDrhHwJ0TSocFloAR3_dnLw_MQks5Xia7iwA%3D%3D)
 <p>This message will show once the new customer has been successfully registered</p>
-</ol>
-###Edit Customer Information###
-<ol>
-<li>Edit Customer</li>
-![](https://lh3.googleusercontent.com/YI29npHmrt_btS2hpwDjvSclTtDxMeA9x0wbQy_75k2MUXOcArwGuPi_Cywri5jXiffK0FUW0k1c1_POn7Fza-xQyQpJXE41im2BCsJKD65S8pzLa2Satg9RmfkAjGjyc0kWgT2_hhT9pfubGAFQtQQwDduIonkrCkfi6moJ3W3Hzaec7L8RnikeWYX3U7s4vG9Ie1stpK1jJhjckAoh_0KiaXCDoOAC6jjaPUAMU9YQhsHpGVENhd6utcKNE31cSxlOPddPUmx-yry0KTjNrqsn9gJguUZjx_e1tJ1q8Aosw_RbbBo5YNg6jNLOieBRXavH9aJggQJucVDNfQpTWCWwS2Kbj_Mmd6qVtGw7lIOwIn2hJjVO1oN7YOETJAIZhulpb8wNVVl-zaYZeYUx-cpbgPiARF9Q7kmFm8zTdfJWLieybH4TyOm02qIcsfbz8_g_hZODvTQ34_VFXdQZvWSQ_NrjGF4mjDvOyNt17Kuw0kMCIKwcfqQBH9WALPE0vpoAuc_e6ka2SKJLvn99th9UuuSEhaBTgARknTdmkjaOzRnd8Km3XC2aM-KGgl90mupJ-G_nmKiuVRakSBF9V7zZZh9ttdfr=w281-h577-no)
-<p>click Edit Customer</p>
 
-<li>Customer Search</li>
-![](https://lh3.googleusercontent.com/Ix0joVDSBDE-A3FFgi_HlQFZ-7USWPRTFSqGDLEqR8EagXyztX2wruRbTe2k2UzLOfshGOVZlOghElbKacVfc08CX1u0qiOpe6h__gZsXdXjr8JRahVJV8xQ81-1V_Xl2B6k0aIH7cvi05VU0vNLdBKPuBRIehXHgNdmpWpP1_FBa0E-naLKYK03PV3dSqOkG55id3Be8l4hzsFXcEiBi5J2a40Dbgyfow6TDoM6-xOsxecTkZl0TlAuEqrK9Wv2ThqoDi0d1v3sL1iSJXJKWF3qgi0Co72jtciMESyFU48GRGGWkqZsVzlRmOPALVON3NJNELyaNK3NvUen-bd624T4G0SakBV3eMKwHArPT1cgKl0KNOwkBhwdOZkF50pF2S9sO9Y604vnw-ROU8edaSCvG-0DoP4Sx-73DwelnWEYShsEBa3DCoIS1YvQGk6SAazxvLbhxH47MT-oYuyt78v4s4_Rq6HjBibngu5KfHnyLD-MM_4LBASMGrQFDAe5P12JpUEe-7bIkI0A1mKZnRRfiEl00HwmCEBDD51A9mTMyLLyDcyr1V1x-199MukWeKBfMuPeFhi3_nrtl285YmNtIqee51Vi=w276-h574-no)
+###3 Edit Customer Information###
+
+####3.1 Edit Customer####
+-------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/EditCustomer/EditCustomer.PNG?token=AAAhbo_FzO8bY3WHr93yPcgNzZuRxIT1ks5Xia78wA%3D%3D)
+<p>press Edit Customer</p>
+
+#### 3.2 Customer Search ####
+-----------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/ReprintCard/FindCustomer.PNG?token=AAAhbt68J3DPAthCYivsZZTR0VfNsEFIks5Xia8awA%3D%3D)
 <p>Search for the customer by entering in the email address or last name, and press "Search"</p>
-
-![](https://lh3.googleusercontent.com/hInXDvOaQfKgkwK3nCe0U3G-BhFghcrdMmBZMILo9OFhBW8JgpNB1Ecc9drKcmfmKZuJBTrQp2SmOEMSv2MdlKxHUSRO5bqeAaycQIuSYoDLpAgjRYHd3VKywLPj-tNXNxZIL0efvbQKWkrYd66t_pI4rJOAPzLRc9N3kl6AnA_3EJgxkHBRDCuO_nOqVYB1oYQrM1uC3AEFkPV4SbQbLuQc1x-TH-7oMr9lXKNTWv78VwpIkZVZkNl5BcmynI4tJ65BXUT2bZf_YM9WO8bSkuDPCg0bjcV-V1QY711jyWyrbTMvJRHPNQhruF858Tz10frQovGw2uA0pMu2_yx7yB9Ee9xAs53eVKXMwbedf2C1QSGzqemxaQEWSGnHBDMAxlw-Iv-P9BIQU3xHk__1o6w2wQiMnoOnC343PD-eZJWtv_P7IxfwyZ2fUQb-u8vuAMED0dzU0gA61B4_tpQC5FKWSS0N2Q3C4YDXxUGn617CXErL1nmQKvXqe1eAyGRK_kmDl8u0kp8RkGHJ1eUQrKT9tse89sGaZOs5VKxFfYJBR0x1WKu8MMgQtZD77mwShWKRUXvOt1m19tE8BB-jdAR3wfOtrTlV=w227-h96-no)
-
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/ReprintCard/CannotFind.PNG?token=AAAhbvnnxjIEzfk3RrudcGdswzpkkNmyks5Xia8ywA%3D%3D)
 <p>This message will show when the customer has not been successfully found.</p>
 
 
-<li>Update Relevant Fields</li>
-![](https://lh3.googleusercontent.com/Z8Wi86XebZH4Rb2rL34-7b0Jg3GgH2JaF58P5tqZ9odOZh5_1sHjWJhnOntWEiIsjWvW-1QvYAuexJiv-EAB2Ph7xdYq1iwD1kKp56HXK2CoUW_kNPMRQZIFvDUFgkX9IoN5DF080MQhVRfvvP0Iro3Xe3demBmbmw8dHjSrInUhLj-oIQNb_2J6FNrPIiu9Qw5y_ICA_NHPC7CvaI_SM1w9bhZtzSH3NBVAA2y51F1nI2Z-AM14Pt4iKt9Herfg9Q8ZinxwzYl_jMoU_kxaLzpOg80mrpuulPRjXDxLRiKdBWwdwyQZkny2XRCZ4m4N2GGbJpoP7RmZk2x7wCjr8JvJwVFDwCtK1wRsY9yVzZ1IX6nmUuN73m2q_cVNSgtgwP-1Pqd1ihyh_kBwgfPdTMpdA0E90E0EHvIs3slQh9G1t67f2vopjzNRLFM4ylbyM1dSxZLvcAaDpy2ycre_Gt-oVBvyLMMk7rCxV1phQrfOwFIidBwrKHwrANT1L9wPRJ8xa8tqAm_ylPNRwNkEXYyEvJknxEVn9ioEnKvHbFfXbRF0_yOLy6chPX1u6_DfIkovVNrcTkOVCKhx4IENkTucE9Ugxwkz=w279-h577-no)
-<p>Change relevant fields within the customer information page, and then click "Update Bowler!"</p>
-
-![](https://lh3.googleusercontent.com/nQvxfL9-rUCIgYX8RZhxdXRSvzjV5TUAGw-c7EQwK0pjswVLx1jwbODx9fj8Oa_OB9TVemRoqeKjllK3Ldg7lh-XAMm4fHvvUUoz7hSzmsPEZ1Z0wtkyOXa9o1-JpCcfjEt6lblGZIdksHHKGyUuVEv_KE7sQo6slAbGMr8qwK3U-4MCFeqwa4eDPqzxywQz8XO4Qc5vsqeZDZDcrBTv6V6cLKKNaLpJktgRWUfBR2Y2YDfH0IhqXaSNO-YNI8Nqc0ES9M1j6DJXTUKW6eAN4GwJVCpkvJzS3oFXG1yUDUw-asrIREEfs_kc1V2Kd8DguXkhARMPKrSWRtuFk8NjvNzPbMp1pWSqeEUQXurJl-PfTWYuwtMDXgAYGGaO1DaT_BKjWYZRyH9IrTnCeuAB3eKkkz91WTTd86uGCLY7pNKhg-xDF6kqBP4T9qXJ9GW4TchLRmGTdqsIhGsLDDVDvwC5Efs11niT3zchpHqJtM0J2ROugAJjlA-ZYXPHvuBmFeuroqecEKCYL_Op3hPygrMKoyIml6OY3CCSc9XxtFwearxMVDcCRqMTfHgIDhhZow3PFbp1bwmwz-mMAdXGyx0b_o7_fKBo=w225-h95-no)
-
+####3.3 Update Relevant Fields####
+----------------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/ReprintCard/UpdateBowler.PNG?token=AAAhbt9iZSSS522uEpFukSWTkBHCJFKTks5Xia9HwA%3D%3D)
+<p>Change relevant fields within the customer information page, and then press "Update Bowler!"</p>
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/ReprintCard/Updated!.PNG?token=AAAhbgoC7ajVp6fLcAfpYJBpj2VSRD9dks5Xia9bwA%3D%3D)
 <p>This message will show when the bowler's information is successfully updated</p>
-</ol>
 
-###Print Customer Card###
-<ol>
-<li>Customer Search</li>
-![](https://lh3.googleusercontent.com/Ix0joVDSBDE-A3FFgi_HlQFZ-7USWPRTFSqGDLEqR8EagXyztX2wruRbTe2k2UzLOfshGOVZlOghElbKacVfc08CX1u0qiOpe6h__gZsXdXjr8JRahVJV8xQ81-1V_Xl2B6k0aIH7cvi05VU0vNLdBKPuBRIehXHgNdmpWpP1_FBa0E-naLKYK03PV3dSqOkG55id3Be8l4hzsFXcEiBi5J2a40Dbgyfow6TDoM6-xOsxecTkZl0TlAuEqrK9Wv2ThqoDi0d1v3sL1iSJXJKWF3qgi0Co72jtciMESyFU48GRGGWkqZsVzlRmOPALVON3NJNELyaNK3NvUen-bd624T4G0SakBV3eMKwHArPT1cgKl0KNOwkBhwdOZkF50pF2S9sO9Y604vnw-ROU8edaSCvG-0DoP4Sx-73DwelnWEYShsEBa3DCoIS1YvQGk6SAazxvLbhxH47MT-oYuyt78v4s4_Rq6HjBibngu5KfHnyLD-MM_4LBASMGrQFDAe5P12JpUEe-7bIkI0A1mKZnRRfiEl00HwmCEBDD51A9mTMyLLyDcyr1V1x-199MukWeKBfMuPeFhi3_nrtl285YmNtIqee51Vi=w276-h574-no)
-<p>Search for the customer by email address or last name, and press "Search"</p>
 
-![](https://lh3.googleusercontent.com/hInXDvOaQfKgkwK3nCe0U3G-BhFghcrdMmBZMILo9OFhBW8JgpNB1Ecc9drKcmfmKZuJBTrQp2SmOEMSv2MdlKxHUSRO5bqeAaycQIuSYoDLpAgjRYHd3VKywLPj-tNXNxZIL0efvbQKWkrYd66t_pI4rJOAPzLRc9N3kl6AnA_3EJgxkHBRDCuO_nOqVYB1oYQrM1uC3AEFkPV4SbQbLuQc1x-TH-7oMr9lXKNTWv78VwpIkZVZkNl5BcmynI4tJ65BXUT2bZf_YM9WO8bSkuDPCg0bjcV-V1QY711jyWyrbTMvJRHPNQhruF858Tz10frQovGw2uA0pMu2_yx7yB9Ee9xAs53eVKXMwbedf2C1QSGzqemxaQEWSGnHBDMAxlw-Iv-P9BIQU3xHk__1o6w2wQiMnoOnC343PD-eZJWtv_P7IxfwyZ2fUQb-u8vuAMED0dzU0gA61B4_tpQC5FKWSS0N2Q3C4YDXxUGn617CXErL1nmQKvXqe1eAyGRK_kmDl8u0kp8RkGHJ1eUQrKT9tse89sGaZOs5VKxFfYJBR0x1WKu8MMgQtZD77mwShWKRUXvOt1m19tE8BB-jdAR3wfOtrTlV=w227-h96-no)
+###4 Print Customer Card###
+####4.1 Press Reprint Card####
+------------------------------
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/ReprintCard/ReprintCard.PNG?token=AAAhbgXSEKl_HJCO-vTP1yz9zPyvZsyOks5Xia-uwA%3D%3D)
+<p>Press "Reprint Card"</p>
 
-<p>This message will show when the customer has not been successfully found.</p>
+####4.2 Customer Search####
+---------------------------
+<p>Refer to 3.2</p>
 
-![](https://lh3.googleusercontent.com/7pCU2eLPA_JEEPBGiqjZ8FD2GxOs5eay4_AbqunB31lbvitA5L0sSRFblS6J84V4BkOIKesfqQT6MW1LilTy7DDKxKC45yt9kP9nftarWSuQrKLrfuFxJ69QMjXGuIn-dTgK4poC2pQztcO1-F7A0BHH7Gciszc8I74EsBZdG30OtsAHAH0waRR0a7YNOcE19cyZgvpR9PI76xtekTPuyft8be4RImF2PybivT3KC3h5G3IuZ15SUi4mUhViXAKBQSqr9t6NzYVd5bEOY8ecmpcAu1425H-qRxU0iM6_2SWTGShYJEEPDS9LOitXAjSn7LcGhAix110EPYmtpPXTT34_a5Ecu8VvTYse5Q1AW8SQckfDzbTLj7e9ArlJD3SLeqXCclkwTPU0lxKbcCAjp9i5mh8jPjSZ_u9mWRFZv2E9Net7Vv5UjtJBoo5sDT7aT-KRdgCqHv42KkaHw4JxV2JL0MZNhJEGjFzZx1x2F0Ckv-a3jT6xlEb8YdnJ0Rr-VsSsrARVS0ISyB663k-bXpaxS0lZbqPYLpnMAhdvc_-c2CZve7JOgGFczlnX9LnFAU_o3ON7EQauBJaAuHe3B8F2JDTsVZlX=w225-h96-no)
+![](https://github.gatech.edu/raw/gt-omscs-softeng/6300Summer16Team07/master/GroupProject/Docs/images/UserManualPictures/Manager%20Pics/ReprintCard/Printed!.PNG?token=AAAhbsybibNWpq_fCYrVWNUCCeGFF0hIks5Xia91wA%3D%3D)
 <p>When the customer has been successfully found, a printer will begin printing a new customer card, and this message will show</p> 
-</ol>

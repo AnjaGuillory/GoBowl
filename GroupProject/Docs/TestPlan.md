@@ -52,6 +52,18 @@ Android, JUnit tests, automated integration tests if time permits.
 | Pass/fail Info | Test passes if failure confirmation dialog is shown and returns to data-entry form |
 | ** This test is not currently passing ** |
 
+
+| Add Customer | Customer already exists in database |
+| --------|:---------------:|
+| Purpose | Disallow duplicate customer information in the database |
+| Steps | Tap "Manager" button.  Tap "New Customer" button.  Fill in first name, last name and email address where email address is already in the database.  Tap "Create Bowler!".
+| Expected Result | System displays "duplicate customer" error dialog and then returns to data entry screen  |
+| Actual Result | Success dialog is displayed showing user successfully created |
+| Pass/fail Info | Test passes if "duplicate customer" error  dialog is shown and returns to data-entry form |
+| ** This test is not currently passing ** |
+
+
+
 | Edit Customer | Ideal Use Case |
 | --------|:---------------:|
 | Purpose | Test editing of customer |
@@ -60,6 +72,17 @@ Android, JUnit tests, automated integration tests if time permits.
 | Actual Result | Edit functionality is currently not implemented |
 | Pass/fail Info | Test passes if success dialog is shown and returns to Manager menu |
 | ** This test is not currently passing ** |
+
+
+| Edit Customer |  Edited Customer info already exists in database  |
+| --------|:---------------:|
+| Purpose | When editing customer info, newly entered email address already in database |
+| Steps | Tap "Manager" button.  Tap "Edit Customer" button.  Tap "Scan Card Now".  The customer's information is displayed in editable text fields.  Make edits to information, email address changes to one that already exists in the database.  Tap "Save Bowler!" button. |
+| Expected Result | System displays "duplicate customer" error dialog and returns to data entry screen |
+| Actual Result | Edit functionality is currently not implemented |
+| Pass/fail Info | Test passes if "duplicate customer" error dialog is shown and returns to data entry screen |
+| ** This test is not currently passing ** |
+
 
 | Print Customer Card | Ideal Use Case |
 | --------|:---------------:|
