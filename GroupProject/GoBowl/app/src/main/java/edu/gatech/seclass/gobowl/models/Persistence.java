@@ -44,9 +44,9 @@ public class Persistence {
 
             //  Create the customer table with the same data as in the stub library provided...
             db.execSQL("create table customers (id PRIMARY KEY, first, last, email, vip, ytd)");
-            db.execSQL("insert into customers values('86ff', 'Ralph', 'Hapschatt', 'Hapschatt@email.fake', 'true', '100.00')");
-            db.execSQL("insert into customers values('9441', 'Betty', 'Monroe', 'Monroe@email.fake', 'false', '10.00')");
-            db.execSQL("insert into customers values('0f0e', 'Everett', 'Scott', 'Scott@email.fake', 'true', '200.00')");
+            db.execSQL("insert into customers values('86ff', 'Ralph', 'Hapschatt', 'hapschatt@email.fake', 'true', '100.00')");
+            db.execSQL("insert into customers values('9441', 'Betty', 'Monroe', 'monroe@email.fake', 'false', '10.00')");
+            db.execSQL("insert into customers values('0f0e', 'Everett', 'Scott', 'scott@email.fake', 'true', '200.00')");
 
 
             //  Create the bowling party data...

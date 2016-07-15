@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
+        jar="/Users/charles/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_feb8907388be7aa1c53ae6c5a8a8d914d360a5bc.jar" />
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_72dff06b193c68fbdd97974e570b9f3c86655454.jar" />
     </item>
     <item
         jar="/Users/charles/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
@@ -16,8 +16,71 @@
         <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_72dff06b193c68fbdd97974e570b9f3c86655454.jar" />
     </item>
     <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a98773481ea6d1e2a928aad961fed125ef2ebc42">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_ad435c96b4933e5de3778971cdc1f96b828d753b.jar" />
+    </item>
+    <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_bdea271648f91c1302c0ce075a7ffb925396f1c1.jar" />
+    </item>
+    <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_bdea271648f91c1302c0ce075a7ffb925396f1c1.jar" />
+    </item>
+    <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_feb8907388be7aa1c53ae6c5a8a8d914d360a5bc.jar" />
+    </item>
+    <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="75ee431d8c6a4d4e3efdad53ce176e79290c1982">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/instant-run_33613ea13ac40373e1fa5804d4d31b4112221953.jar" />
+    </item>
+    <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_feb8907388be7aa1c53ae6c5a8a8d914d360a5bc.jar" />
+    </item>
+    <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_73e26a77176705916cee1c486c91d8ebf1ddd8cd.jar" />
+    </item>
+    <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_2044ccd5cdbd0facdcc970603f22d2b8571c2b29.jar" />
+    </item>
+    <item
         jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/libs/gobowl-services.jar"
         jumboMode="false"
+        revision="23.0.3"
+        sha1="e3871a0716ffa50081d3c393fb5acc2d55c6da1e">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/gobowl-services_fbb16b94ec056088a06a6d78f671d8b263b0e536.jar" />
+    </item>
+    <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/libs/gobowl-services.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="e3871a0716ffa50081d3c393fb5acc2d55c6da1e">
         <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/gobowl-services_fbb16b94ec056088a06a6d78f671d8b263b0e536.jar" />
@@ -28,6 +91,13 @@
         revision="23.0.3"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
         <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_73e26a77176705916cee1c486c91d8ebf1ddd8cd.jar" />
+    </item>
+    <item
+        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_5f11ec98985b5a134821c8b866159689273eecd4.jar" />
     </item>
     <item
         jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
@@ -42,13 +112,6 @@
         revision="23.0.3"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
         <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_2044ccd5cdbd0facdcc970603f22d2b8571c2b29.jar" />
-    </item>
-    <item
-        jar="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/charles/Dropbox/GA Tech Masters/Classes/CS 6300 SDP/Group 3/6300Summer16Team07/GroupProject/GoBowl/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_bdea271648f91c1302c0ce075a7ffb925396f1c1.jar" />
     </item>
 
 </items>

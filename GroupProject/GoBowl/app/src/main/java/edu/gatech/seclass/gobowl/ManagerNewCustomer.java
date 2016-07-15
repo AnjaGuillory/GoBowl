@@ -62,7 +62,13 @@ public class ManagerNewCustomer extends AppCompatActivity {
 
         if (mode == 1) {
 
-            bsys.addCustomer(first, last, email);
+            String error = bsys.addCustomer(first, last, email);
+
+            if (error != null) {
+                CheesyDialog ed = new CheesyDialog(this);
+                ed.dialog("Error", error, null);
+                return;
+            }
 
             CheesyDialog cd = new CheesyDialog(ManagerNewCustomer.this);
 

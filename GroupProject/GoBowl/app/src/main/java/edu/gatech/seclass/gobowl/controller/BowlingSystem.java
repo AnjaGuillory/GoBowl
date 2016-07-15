@@ -183,8 +183,19 @@ public class BowlingSystem implements Customer, Manager {
         *********************************************************************** */
 
     @Override
-    public void addCustomer(String first, String last, String email) {
-        Bowler b = new Bowler();
+    public String addCustomer(String first, String last, String email) {
+
+        Bowler b;
+
+        email = email.toLowerCase();
+
+        b = Bowler.findByEmail(email);
+
+        if (b != null) {
+            return "Duplicate Email Address";
+        }
+
+        b = new Bowler();
         b.setString("first", first);
         b.setString("last", last);
         b.setString("email", email);
@@ -194,6 +205,8 @@ public class BowlingSystem implements Customer, Manager {
          do {
              cardPrinted = PrintingService.printCard(first, last, b.getString("id"));
          } while (! cardPrinted);
+
+        return null;
     }
 
     private Bowler customer;
@@ -246,7 +259,7 @@ public class BowlingSystem implements Customer, Manager {
     public void updateCustomer(String first, String last, String email) {
         customer.setString("first", first);
         customer.setString("last", last);
-        customer.setString("email", email);
+        customer.setString("email", email.toLowerCase());
         customer.saveRecord();
     }
 }

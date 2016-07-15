@@ -43,7 +43,7 @@ public class Bowler extends DatabaseEntity {
 
     public static Bowler findByEmail(String email) {
         Bowler b = new Bowler();
-        b.fetchByColumn("email", email);
+        b.fetchByColumn("email", email.toLowerCase());
 
         if (b.instanceData == null) {
             return null;
