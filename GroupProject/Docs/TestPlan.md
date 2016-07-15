@@ -52,6 +52,18 @@ Android, JUnit tests, automated integration tests if time permits.
 | Pass/fail Info | Test passes if failure confirmation dialog is shown and returns to data-entry form |
 | ** This test is not currently passing ** |
 
+
+| Add Customer | Customer already exists in database |
+| --------|:---------------:|
+| Purpose | Disallow duplicate customer information in the database |
+| Steps | Tap "Manager" button.  Tap "New Customer" button.  Fill in first name, last name and email address where email address is already in the database.  Tap "Create Bowler!".
+| Expected Result | System displays "duplicate user" error dialog and then returns to data entry screen  |
+| Actual Result | Success dialog is displayed showing user successfully created |
+| Pass/fail Info | Test passes if "duplicate user" error  dialog is shown and returns to data-entry form |
+| ** This test is not currently passing ** |
+
+
+
 | Edit Customer | Ideal Use Case |
 | --------|:---------------:|
 | Purpose | Test editing of customer |
