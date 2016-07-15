@@ -29,8 +29,8 @@ public interface Customer {
     public double getFees();
     //  What lane is/was the party at?
     public int getLane();
-    //  Number of cards
-    public void setNumCreditCards(int n);
+    //  Number of cards: false = invalid number...
+    public boolean setNumCreditCards(int n);
 
     //  Pay with a card...
     //  -1 card scan error, -2 card payment error, 0 more cards, 1 done
