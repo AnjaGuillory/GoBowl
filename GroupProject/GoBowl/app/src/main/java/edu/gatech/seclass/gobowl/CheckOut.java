@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import edu.gatech.seclass.gobowl.controller.BowlingSystem;
+import edu.gatech.seclass.gobowl.util.CheesyDialog;
 import gobowl.seclass.gatech.edu.gobowl.R;
 
 public class CheckOut extends AppCompatActivity {
@@ -34,7 +35,11 @@ public class CheckOut extends AppCompatActivity {
 
         int numCards = Integer.parseInt(etCards.getText().toString());
 
-        BowlingSystem.getInstance().setNumCreditCards(numCards);
+        if (!BowlingSystem.getInstance().setNumCreditCards(numCards)) {
+            CheesyDialog d = new CheesyDialog(this);
+            d.dialog("Error", "Invalid number of cards.  Must in range 1 to number of bowlers.", null);
+            return;
+        }
 
         Intent myIntent = new Intent(this, ScanCreditCard.class);
         this.startActivity(myIntent);

@@ -71,6 +71,7 @@ public class BowlingSystem implements Customer, Manager {
         bowlersSoFar = 1;
         activeBowlingParty = new BowlingParty();
         activeBowlingParty.addBowler(leadBowler);
+        activeBowlingParty.setInteger("numberofbowlers", totalBowlers);
         if (totalBowlers == 1) {
             return true;
         }
@@ -139,9 +140,17 @@ public class BowlingSystem implements Customer, Manager {
     private double individualfee;
 
     @Override
-    public void setNumCreditCards(int n) {
+    public boolean setNumCreditCards(int n) {
+        if (n < 1) {
+            return false;   // No negative cards...
+        }
+
+        if (n > activeBowlingParty.numBowlers()) {
+            return false;   // Cannot pay with more cards than bolwers...
+        }
         numCreditCards = n;
         individualfee = ((int) (100 * fee / n))/100.0;
+        return true;
     }
 
     @Override

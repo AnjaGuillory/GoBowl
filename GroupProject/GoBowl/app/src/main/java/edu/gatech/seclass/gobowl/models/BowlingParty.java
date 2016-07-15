@@ -65,4 +65,8 @@ public class BowlingParty extends DatabaseEntity {
         return null;
     }
 
+    public int numBowlers() {
+        return this.getInteger("numberofbowlers");
+    }
+
 }
