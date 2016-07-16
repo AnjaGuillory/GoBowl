@@ -113,6 +113,9 @@ public class BowlingSystem implements Customer, Manager {
     }
 
     private double fee = 0;
+
+
+
     @Override
     public boolean checkOut() {
         activeBowlingParty = BowlingParty.getByBowler(leadBowler);

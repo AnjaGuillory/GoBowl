@@ -129,7 +129,14 @@ The final UIs have changed subtly from the initial designs given in this documen
 ![Customer Checkout](images/wf-01-cust-co-credit.png)
 
 
+## 5 Tasks left unaccompllished
 
+While we managed to implement the majority of the requirements, the following tasks have been left unfinished:
+
+1. Fee Calculation: The code has a fixecd $15.99 fee as opposed to a variable one based upon the time of day and length of session.
+2. Score saving: Since there is no API available to capture the results of the bowling party's play, we did not implement a mechanism for saving per-bowler results to the database.  In addition, the specification does not include a mechanism for the bowlers to review or retrieve the scores, so saving them is a sort of write-only memory.
+
+The first task has a negligible effect on the user interface.  The second task has us skip over the "Save Scores" screen.
 --
 
 ### Image Source Credits:
