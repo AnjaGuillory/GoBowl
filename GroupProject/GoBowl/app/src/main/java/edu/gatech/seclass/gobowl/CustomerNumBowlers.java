@@ -41,7 +41,7 @@ public class CustomerNumBowlers extends AppCompatActivity {
         }
 
         myIntent = new Intent(this, CustomerLogin.class);
-        myIntent.putExtra("title","Scan Next Bowler Please");
+        myIntent.putExtra("title","Next Bowler's Card");
         myIntent.putExtra("action", "next");
         startActivityForResult(myIntent, 0);
     }
