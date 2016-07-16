@@ -1,6 +1,10 @@
 # Design Document
 
-**Author**: Charles McGuinness
+| Authors |
+|:---|
+| Charles McGuinness |
+| Anja Guillory |
+| Arthur Wanner |
 
 | Version | Description     |
 |:--|:--|
@@ -38,6 +42,13 @@ The system is composed of a simple Android application which implements two majo
 
 As the functionality at this point is quite simple, the design revolves around a single "controller" that provides the required business logic.
 
+### 2.0 MVC Architecture
+
+In order to adhere, roughly, to a MVC architecture, the following approach is taken:
+
+1. Activities are used as Views. For simplicity, each page of the application is represented by a standalone activity.  The activities call the controller to perform the business logic of the application, and the controller indicates to the activities how they should transition to the next activity.
+2. There is a central application controller class `BowlingSystem` which is the single point of interface for the views.
+3. The models are based upon an abstract `DatabaseEntity` object which works with an underlying `Persistence` class that provides the direct access to the SQLite database.  The `DatabaseEntity` class provides generic CRUD functionality (well, not so much D).
 
 ### 2.1 Component Diagram
 
@@ -87,6 +98,11 @@ When mapping the components of the application to the underlying classes, the it
 *TBD*
 
 ## 4 User Interface Design
+
+### *Nota Bene:*
+
+The final UIs have changed subtly from the initial designs given in this document; the user guide should be considered the authoritative record of the design.  What follows are the initial wireframes.
+
 
 ### Program Startup (Splash and Manager/Customer Selection):
 ![Startup Screen](images/wf-01-splash.png)
