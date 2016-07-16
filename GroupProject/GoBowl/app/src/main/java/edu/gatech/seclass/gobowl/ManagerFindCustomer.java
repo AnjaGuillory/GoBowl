@@ -20,13 +20,16 @@ public class ManagerFindCustomer extends AppCompatActivity {
     }
 
     public void buttonFindCustomer(View view) {
-        EditText etName = (EditText) findViewById(R.id.etFindName);
+
+        //  Logic for search by name is commented out here, but remains elsewhere...
+
+        // EditText etName = (EditText) findViewById(R.id.etFindName);
         EditText etEmail = (EditText) findViewById(R.id.etFindEmail);
 
-        String name = etName.getText().toString();
+        // String name = etName.getText().toString();
         String email = etEmail.getText().toString();
 
-        if (!BowlingSystem.getInstance().findCustomer(name,email)) {
+        if (!BowlingSystem.getInstance().findCustomer("",email)) {
             CheesyDialog cd = new CheesyDialog(this);
             cd.dialog("Not Found", "The customer was not found in the system", null);
             return;
