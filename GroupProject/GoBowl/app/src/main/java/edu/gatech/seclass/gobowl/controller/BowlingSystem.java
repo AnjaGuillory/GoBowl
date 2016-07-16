@@ -283,10 +283,23 @@ public class BowlingSystem implements Customer, Manager {
     }
 
     @Override
-    public void updateCustomer(String first, String last, String email) {
+    public String updateCustomer(String first, String last, String email) {
+        // Did we change the email address?
+        if (!email.equals(customer.getString("email"))) {
+
+            // If we did, is the email address in use by someone else?
+            Bowler b = Bowler.findByEmail(email);
+            if (b != null) {
+                // Yes, do not allow: email addresses must be unique
+                return "That email address is already used.";
+            }
+        }
+
+
         customer.setString("first", first);
         customer.setString("last", last);
         customer.setString("email", email.toLowerCase());
         customer.saveRecord();
+        return "";
     }
 }

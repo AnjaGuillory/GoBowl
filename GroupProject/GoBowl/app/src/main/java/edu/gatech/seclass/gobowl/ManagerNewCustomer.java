@@ -86,15 +86,21 @@ public class ManagerNewCustomer extends AppCompatActivity {
                         public void allDone(android.content.Context parent) {
                             finish();
                         }
-                    });
+                    }); 
             return;
         }
 
-        bsys.updateCustomer(first, last, email);
+        String updateStatus = bsys.updateCustomer(first, last, email);
+
+        if (updateStatus.length() > 0) {
+            errorDialog = new CheesyDialog(this);
+            errorDialog.dialog("Error", updateStatus, null);
+            return;
+        }
 
         CheesyDialog cd = new CheesyDialog(ManagerNewCustomer.this);
 
-        cd.dialog("Customer", "Customer " + first + " updated!",
+        cd.dialog("Success!", "Customer " + first + " updated!",
                 new CheesyCallback() {
                     @Override
                     public void allDone(android.content.Context parent) {

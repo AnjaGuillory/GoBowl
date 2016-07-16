@@ -24,7 +24,7 @@ public class Persistence {
 
     //  If we have changed the database schema in some fashion, this is used
     //  to flag the change so we know to drop the tables and recreate them
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 5;
 
 
     @Nullable
