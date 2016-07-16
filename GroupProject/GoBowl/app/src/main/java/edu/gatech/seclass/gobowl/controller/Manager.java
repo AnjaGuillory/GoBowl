@@ -6,6 +6,7 @@ package edu.gatech.seclass.gobowl.controller;
 public interface Manager {
     public String addCustomer(String first, String last, String email); // Null for no error
     public boolean findCustomer(String last, String email);
+    public String findCustomeByCard();
     public boolean reprintCard();
     public String getCustomerFirst();
     public String getCustomerLast();

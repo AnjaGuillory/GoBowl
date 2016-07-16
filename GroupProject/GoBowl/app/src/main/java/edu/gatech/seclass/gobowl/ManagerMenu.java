@@ -33,18 +33,31 @@ public class ManagerMenu extends AppCompatActivity {
         startActivityForResult(myIntent, 0);
     }
 
+
+    //  Find customer by scanning their card...
+    public void buttonEditCustomer(View view) {
+        Intent myIntent = new Intent(this, CustomerLogin.class);
+        myIntent.putExtra("title","Scan Customer's Card");
+        myIntent.putExtra("action", "manager");
+        startActivityForResult(myIntent, 0);
+    }
+
+
+/*
+    // Find customer by name or email....
     public void buttonEditCustomer(View view) {
         whatNext = 2;
         Intent myIntent = new Intent(this, ManagerFindCustomer.class);
         startActivityForResult(myIntent, 0);
     }
-
+*/
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == Activity.RESULT_OK) {
             String why = data.getStringExtra("result");
+
             if (why != null && why.equals("found")) {
 
                 if (whatNext == 1) {

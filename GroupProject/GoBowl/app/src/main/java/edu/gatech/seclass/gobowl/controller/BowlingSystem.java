@@ -240,6 +240,21 @@ public class BowlingSystem implements Customer, Manager {
     }
 
     @Override
+    public String findCustomeByCard() {
+        String id;
+        id = QRCodeService.scanQRCode();
+
+        if (id.equals("ERR")) {
+            return "Card did not scan.  Try again.";
+        }
+
+        customer = new Bowler(id);
+
+
+        return "";
+    }
+
+    @Override
     public boolean reprintCard() {
         // Just loop until printed, darn it!
         while (true) {

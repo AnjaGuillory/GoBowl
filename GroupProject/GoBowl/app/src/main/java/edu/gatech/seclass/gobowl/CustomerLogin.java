@@ -46,6 +46,25 @@ public class CustomerLogin extends AppCompatActivity {
         Intent intent = getIntent();
         String action = intent.getStringExtra("action");
 
+        if (action.equals("manager")) {
+
+            BowlingSystem bsys = BowlingSystem.getInstance();
+            String result = bsys.findCustomeByCard();
+
+            if (result.length() != 0) {
+                dialog("Error", result);
+                return;
+            }
+            Intent resultIntent = new Intent();
+            resultIntent.putExtra("result", "found");
+            setResult(Activity.RESULT_OK, resultIntent);
+            finish();
+            return;
+        }
+
+
+
+
         if (action.equals("login")) {
 
             BowlingSystem bsys = BowlingSystem.getInstance();
