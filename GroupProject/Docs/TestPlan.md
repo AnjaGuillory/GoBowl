@@ -79,9 +79,8 @@ Android, JUnit tests, automated integration tests if time permits.
 | Purpose | When editing customer info, newly entered email address already in database |
 | Steps | Tap "Manager" button.  Tap "Edit Customer" button.  Tap "Scan Card Now".  The customer's information is displayed in editable text fields.  Make edits to information, email address changes to one that already exists in the database.  Tap "Save Bowler!" button. |
 | Expected Result | System displays "duplicate customer" error dialog and returns to data entry screen |
-| Actual Result | Edit functionality is currently not implemented |
+| Actual Result | System detects duplicate email address and displays error dialog. |
 | Pass/fail Info | Test passes if "duplicate customer" error dialog is shown and returns to data entry screen |
-| ** This test is not currently passing ** |
 
 
 | Print Customer Card | Ideal Use Case |
