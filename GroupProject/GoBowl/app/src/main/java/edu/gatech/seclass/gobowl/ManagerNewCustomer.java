@@ -54,10 +54,18 @@ public class ManagerNewCustomer extends AppCompatActivity {
     }
 
     public void buttonAdd(View view) {
+        CheesyDialog errorDialog;
+
         String first = etFirst.getText().toString();
         String last = etLast.getText().toString();
         String email = etEmail.getText().toString();
 
+        if (first.length() == 0 || last.length() == 0 || email.length() == 0) {
+            errorDialog = new CheesyDialog(this);
+            errorDialog.dialog("Error", "You need to enter values for all three fields.", null);
+            return;
+
+        }
         BowlingSystem bsys = BowlingSystem.getInstance();
 
         if (mode == 1) {
@@ -65,8 +73,8 @@ public class ManagerNewCustomer extends AppCompatActivity {
             String error = bsys.addCustomer(first, last, email);
 
             if (error != null) {
-                CheesyDialog ed = new CheesyDialog(this);
-                ed.dialog("Error", error, null);
+                errorDialog = new CheesyDialog(this);
+                errorDialog.dialog("Error", error, null);
                 return;
             }
 
