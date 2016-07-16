@@ -6,7 +6,7 @@
 | --------|:---------------:|
 | V1      | Initial version |
 | V2      | Added system test cases |
-| V3      | Added additional system test cases |
+| V3      | Added additional system test cases, added directions for running automated android instrumented unit tests. |
 
 ## 1 Testing Strategy
 
@@ -18,12 +18,12 @@ The Go Bowl application will initially be developed with system and unit testing
 
 ### 1.2 Test Selection
 
-Initally the functional (black box) testing will be performed with unit testing defined in a future deliverable.
+Initally the functional (black box) testing will be performed.  Tests are performed manually with an actual device or emulator.  System tests are listed in this document.  Basic unit testing structure has been created for V3.  See directions below for running the "BowlingSystemTest.java" run configuration.
 
 
 ### 1.3 Adequacy Criterion
 
-System tests will be performed manually using an android device.  Test coverage will be used to examine the quality of any unit tests.
+System tests will be performed manually using an android device.  Instrumented android tests are being used for the unit tests.  To execute unit tests, see directions below.  Pass / Fail is currently being used for unit tests adequacy criterion.
 
 
 ### 1.4 Bug Tracking
@@ -35,6 +35,8 @@ Bugs encountered in development will be processed by the team as testing develop
 Android, JUnit tests, automated integration tests if time permits. 
 
 ## 2 Test Cases
+
+### 2.1 System Test Cases
 
 | Add Customer | Ideal use case |
 | --------|:---------------:|
@@ -157,4 +159,10 @@ Android, JUnit tests, automated integration tests if time permits.
 | Actual Result | Not possible to enter negative numbers with UI widget |
 | Pass/fail Info | Test passes if system displays "invalid input" dialog or UI widget disallows negative numbers |
 
+### 2.2 Automated Unit Test Cases
 
+Instrumented Android test cases are being used for unit testing.  Note that these tests need to run on an actual device or emulator.
+
+As of TestPlan.md V3, An inital unit test for the BowlingSystem.login() method has been created.  A run configuration has been created to execute the tests.
+
+To run the tests, select Run->Run...->BowlingSystemTest.  Next choose your device or emulator.  Results will be shown in the Run dialog.  Note that these unit tests do not currently show coverage.
