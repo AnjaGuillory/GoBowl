@@ -11,5 +11,5 @@ public interface Manager {
     public String getCustomerFirst();
     public String getCustomerLast();
     public String getCustomerEmail();
-    public void updateCustomer(String first, String last, String email);
+    public String updateCustomer(String first, String last, String email);
 }
