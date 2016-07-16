@@ -6,7 +6,7 @@
 | --------|:---------------:|
 | V1      | Initial version |
 | V2      | Added system test cases |
-| V3      | Added additional system test cases, added directions for running automated android instrumented unit tests. |
+| V3      | Added additional system test cases, added directions for running automated android instrumented unit tests, updated pass/fail status for system test cases. |
 
 ## 1 Testing Strategy
 
@@ -51,7 +51,7 @@ Android, JUnit tests, automated integration tests if time permits.
 | Purpose | Add new customer but don't supply all of the necessary information |
 | Steps | Tap "Manager" button.  Tap "New Customer" button.  Fill in first name but ommit last name and email address.  Tap "Create Bowler!".
 | Expected Result | System displays error dialog and then returns to data entry screen  |
-| Actual Result | Success dialog is displayed showing first name |
+| Actual Result | "Error" dialog is displayed informing user to fill in empty fields |
 | Pass/fail Info | Test passes if failure confirmation dialog is shown and returns to data-entry form |
 
 
