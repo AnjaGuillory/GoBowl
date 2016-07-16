@@ -3,8 +3,9 @@
 **Author**: Charles McGuinness
 
 | Version | Description     |
-| --------|:---------------:|
-| V1      | Initial version |
+|:--|:--|
+| V1 | Initial version |
+| V2 | Revised post implmentation |
 
 ## 1 Design Considerations
 
@@ -14,9 +15,9 @@ The bowling alley application is designed to use Android smartphones (or tablets
 
 * We assume the UI will be run on a modern Android OS
 * We assume the UI will be primarily used on a smartphone form factor
-* We assume that a proper backing store will be selected later and incorporate in subsequent rounds of development after the core application design is approved.  For the short term, the database capabilities on the android device will be used.
-* We assume the hardware libraries will be provided to us at a later point
-* We assume that there is a local network connecting the smartphone and other components in the bowling alley.
+* We assume that a proper backing store will be selected later and incorporate in subsequent rounds of development after the core application design is approved.  For the short term, the SQLite database capabilities on the android device will be used.
+* We are using the stub libraries provided to simulate the hardware interfaces; we assume that the "real world" interfaces will be the same or very close.
+
 
 ### 1.2 Constraints
 

@@ -7,73 +7,80 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.gatech.seclass.gobowl.ManagerMenu">
+    tools:context="edu.gatech.seclass.gobowl.ManagerMenu"
+    android:nestedScrollingEnabled="false">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:id="@+id/imageView2"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/logo" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Manager Menu"
-            android:id="@+id/textView"
-            android:layout_below="@+id/imageView2"
-            android:layout_centerHorizontal="true"
-            android:textAlignment="center"
-            android:textSize="50dp"
-            android:textIsSelectable="true"
-            android:layout_marginTop="20dp" />
-
-        <Space
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="New Customer"
-            android:id="@+id/btnNewCustomer"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:textSize="32dp"
-            android:layout_marginTop="10dp"
-            android:onClick="buttonNew" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
 
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Reprint Card"
-            android:id="@+id/button2"
-            android:layout_below="@+id/btnNewCustomer"
-            android:layout_alignLeft="@+id/btnNewCustomer"
-            android:layout_alignStart="@+id/btnNewCustomer"
-            android:layout_marginTop="10dp"
-            android:textSize="32dp"
-            android:nestedScrollingEnabled="false"
-            android:onClick="buttonReprintCard" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Manager Menu"
+                android:id="@+id/textView"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="32dp"
+                android:textIsSelectable="true"
+                android:layout_marginTop="10dp" />
 
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Edit Customer"
-            android:id="@+id/button3"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/button2"
-            android:layout_centerHorizontal="true"
-            android:textSize="32dp"
-            android:onClick="buttonEditCustomer" />
-    </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="New Customer"
+                android:id="@+id/btnNewCustomer"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="24dp"
+                android:layout_marginTop="10dp"
+                android:onClick="buttonNew" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Reprint Card"
+                android:id="@+id/button2"
+                android:layout_below="@+id/btnNewCustomer"
+                android:layout_alignLeft="@+id/btnNewCustomer"
+                android:layout_alignStart="@+id/btnNewCustomer"
+                android:layout_marginTop="10dp"
+                android:textSize="24dp"
+                android:nestedScrollingEnabled="false"
+                android:onClick="buttonReprintCard" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Customer"
+                android:id="@+id/button3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/button2"
+                android:layout_centerHorizontal="true"
+                android:textSize="24dp"
+                android:onClick="buttonEditCustomer" />
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
