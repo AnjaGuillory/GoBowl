@@ -143,9 +143,8 @@ Android, JUnit tests, automated integration tests if time permits.
 | Purpose | Verify that invalid input for the # of credit cards is caught. |
 | Steps | Customer was prevously assigned a lane.  Tap "Customer" button.  Tap "Scan Card Now" button to login.  Tap "Finish Bowling" button.  Enter 0 for the # of credit cards to split payment.  Tap "Pay Now!" button.  System displays error "invalid input" dialog.  Tap "ok" button.  |
 | Expected Result | System displays "invalid input" dialog. |
-| Actual Result | System goes into infinite loop prompting for credit cards. |
+| Actual Result | System displays "invalid input" dialog. |
 | Pass/fail Info | Test passes if system displays "invalid input" dialog. |
-| ** This test is not currently passing ** |
 
 
 | Checkout | Invalid # of credit cards (-1) |
