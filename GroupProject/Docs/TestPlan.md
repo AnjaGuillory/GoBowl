@@ -53,7 +53,6 @@ Android, JUnit tests, automated integration tests if time permits.
 | Expected Result | System displays error dialog and then returns to data entry screen  |
 | Actual Result | Success dialog is displayed showing first name |
 | Pass/fail Info | Test passes if failure confirmation dialog is shown and returns to data-entry form |
-| ** This test is not currently passing ** |
 
 
 | Add Customer | Customer already exists in database |
@@ -61,9 +60,8 @@ Android, JUnit tests, automated integration tests if time permits.
 | Purpose | Disallow duplicate customer information in the database |
 | Steps | Tap "Manager" button.  Tap "New Customer" button.  Fill in first name, last name and email address where email address is already in the database.  Tap "Create Bowler!".
 | Expected Result | System displays "duplicate customer" error dialog and then returns to data entry screen  |
-| Actual Result | Success dialog is displayed showing user successfully created |
+| Actual Result | "duplicate customer" dialog is displayed |
 | Pass/fail Info | Test passes if "duplicate customer" error  dialog is shown and returns to data-entry form |
-| ** This test is not currently passing ** |
 
 
 
@@ -72,9 +70,8 @@ Android, JUnit tests, automated integration tests if time permits.
 | Purpose | Test editing of customer |
 | Steps | Tap "Manager" button.  Tap "Edit Customer" button.  Tap "Scan Card Now".  The customer's information is displayed in editable text fields.  Make edits to information.  Tap "Save Bowler!" button. |
 | Expected Result | System displays success dialog showing changed data for conirmation |
-| Actual Result | Edit functionality is currently not implemented |
+| Actual Result | "Customer updated" success dialog shown, changes confirmed when editing again. |
 | Pass/fail Info | Test passes if success dialog is shown and returns to Manager menu |
-| ** This test is not currently passing ** |
 
 
 | Edit Customer |  Edited Customer info already exists in database  |
@@ -90,7 +87,7 @@ Android, JUnit tests, automated integration tests if time permits.
 | Print Customer Card | Ideal Use Case |
 | --------|:---------------:|
 | Purpose | Basic test of Reprinting of Customer id card |
-| Steps | Tap "Manager" button.  Tap "Reprint Card" button.  Enter in email address or last name to search by.  Tap "search" button.  Print success displayed and returns to main menu.    |
+| Steps | Tap "Manager" button.  Tap "Reprint Card" button.  Enter in the email address to search by.  Tap "search" button.  Print success displayed and returns to main menu.    |
 | Expected Result | System displays print success dialog confirming customer found and printed. |
 | Actual Result | System display print success dialog for customer. |
 | Pass/fail Info | Test passes if success dialog is shown and returns to Manager menu |
@@ -98,7 +95,7 @@ Android, JUnit tests, automated integration tests if time permits.
 | Print Customer Card | Customer Not Found |
 | --------|:---------------:|
 | Purpose | test of Reprinting of Customer id card and customer info not found |
-| Steps | Tap "Manager" button.  Tap "Reprint Card" button.  Enter in email address or last name to search by.  Tap "search" button.  "Not Found" dialog box is displayed.  Tap "Back" button to return to manager menu.  |
+| Steps | Tap "Manager" button.  Tap "Reprint Card" button.  Enter in email address to search by.  Tap "search" button.  "Not Found" dialog box is displayed.  Tap "Back" button to return to manager menu.  |
 | Expected Result | System displays "Not Found" dialog. |
 | Actual Result | System display "Not Found" dialog for customer. |
 | Pass/fail Info | Test passes if success dialog is shown |
